@@ -28,7 +28,16 @@ app.use("/users", usersRouter);
 /************************************************
  * ROTAS
  * ***********************************************/
-import clienteRouter from './routes/usuario.js'
-app.use('/usuarios', clienteRouter)
+import usuarioRouter from './routes/usuarios.js'
+app.use('/usuarios', usuarioRouter)
+
+import postRouter from './routes/posts.js'
+app.use('/posts', postRouter)
+
+import vendaRouter from './routes/vendas.js'
+app.use('/vendas', vendaRouter)
+
+import projetoRouter from './routes/projetos.js'
+app.use('/projetos', projetoRouter)
 
 export default app;

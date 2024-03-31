@@ -1,10 +1,13 @@
 import mongoose from 'mongoose'
-import Usuario from './Usuario'
 
 const esquema = mongoose.Schema({
     // _id é automático no Mongoose
     nome: { type: String, required: true},
-    usuario_id: { type: Usuario, required: true},
+    usuario_id: {
+        type: mongoose.ObjectId,
+        ref: 'Usuario', // Nome do Model referenciado
+        required: true
+    },
     data: { type: Date, required: true},
     descricao: { type: String, required: true},
     midia: { type: String, required: false},
