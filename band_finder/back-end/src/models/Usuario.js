@@ -5,10 +5,6 @@ const esquema = mongoose.Schema({
     nome: { type: String, required: true },
     cpf: { type: String, required: true, index:{unique: true} },
     data_nascimento: { type: String, required: true },
-    logradouro: { type: String, required: true },
-    num_casa: { type: String, required: true },
-    bairro:{ type: String, required: true },
-    complemento: { type: String, required: false },
     municipio: { type: String, required: true },
     uf: { type: String, required: true },
     telefone: { type: String, required: true },
@@ -19,7 +15,8 @@ const esquema = mongoose.Schema({
     foto_user: { type: String, required: false },
     instagram: { type: String, required: false },
     youtube: { type: String, required: false },
-    facebook: { type: String, required: false }
+    facebook: { type: String, required: false },
+    senha: { type: String, required: true },
 })
 /*Parâmetros de mongoose.model
     1° ~> Nome do model (inicial maiuscula)
