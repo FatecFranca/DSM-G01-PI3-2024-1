@@ -19,7 +19,11 @@ controller.create = async function(req, res) {
 
 controller.retrieveAll = async function(req, res) {
   try {
-    const result = await Venda.find().sort({ nome: 'asc' })
+    const query = Venda.find().sort({ descricao: 'asc'})
+    // Verifica se o parametro 'pop_fornecedor' foi passado na URL
+    //e, em caso positivo, acrescenta o populate() à consulta
+   if('pop_usuario' in req.query) query.populate('usuario')
+   const result = await query.exec()
     // HTTP 200: OK (implícito)
     res.send(result)
   }
@@ -32,8 +36,15 @@ controller.retrieveAll = async function(req, res) {
 
 controller.retrieveOne = async function(req, res) {
   try {
-    const result = await Venda.findById(req.params.id)
-    // Documento encontrado ~> HTTP 200: OK (implícito)
+    const query = Venda.findById(req.params.id)
+    
+    // Verifica se o parametro 'pop_fornecedor' foi passado na URL
+    //e, em caso positivo, acrescenta o populate() à consulta
+   if('pop_fornecedor' in req.query) query.populate('fornecedor')
+   
+   const result = await query.exec()
+
+    // Documento não encontrado ~> HTTP 200: OK (implicito)
     if(result) res.send(result)
     // Documento não encontrado ~> HTTP 404: Not Found
     else res.status(404).end()  
