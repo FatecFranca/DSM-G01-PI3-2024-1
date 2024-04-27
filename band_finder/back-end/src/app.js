@@ -31,7 +31,7 @@ import usuarioRouter from './routes/usuarios.js'
 app.use('/usuarios', usuarioRouter)
 
 import projetoRouter from './routes/projetos.js'
-app.use('/fornecedores', projetoRouter)
+app.use('/projetos', projetoRouter)
 
 import postRouter from './routes/posts.js'
 app.use('/posts', postRouter)
