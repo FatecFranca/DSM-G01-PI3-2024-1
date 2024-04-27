@@ -9,11 +9,11 @@ const esquema = mongoose.Schema({
         required: true
     },
     data: { type: Date, required: true},
-    descricao: { type: String, required: true},
+    descricao: { type: String, required: false},
     municipio: {type: String, required: true},
     uf: {type: String, required: true},
     preco: { type: Number, required: true},
-    midia: { type: [String], required: false}, //Array
+    midia: { type: String, required: false},
 })
 /*Parâmetros de mongoose.model
     1° ~> Nome do model (inicial maiuscula)

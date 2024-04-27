@@ -1,0 +1,74 @@
+////////////////////////////////////////// usuarios
+
+{
+  "nome": "Allison Rodrigues de Paula e Silva",
+  "cpf": "126.456.799-03",
+  "data_nascimento": "1988-06-17T00:00:00Z",
+  "municipio": "Franca",
+  "uf": "SP",
+  "telefone": "123456789",
+  "email": "allison@example.com",
+  "habilidade": [
+    "guitarra",
+    "vocal"
+  ],
+  "bio": "Estou aqui para formar uma banda",
+  "influencia": [
+    "rock",
+    "metal"
+  ],
+  "foto_user": "user.jpg",
+  "instagram": "@allisonrps",
+  "youtube": "allisonxide",
+  "facebook": "allison_rps",
+  "senha": "password123"
+}
+
+
+////////////////////////////////////////// posts
+
+{
+  "usuario_id": "662c2ce9e363e968531bb19d",
+  "data": "2023-06-17T00:00:00Z",
+  "descricao": "Foto de um show no Roots",
+  "midia": "foto.png"
+}
+
+////////////////////////////////////////// projetos
+
+{
+  "titulo": "Banda Rockers",
+  "usuario_id": "662c2ce9e363e968531bb19d",
+  "descricao": "Banda com 5 anos de estrada, com interesse em gravar novo album autoral",
+  "data": "2024-03-17T00:00:00Z",
+  "objetivo":  [
+    "autoral",
+    "cover",
+    "hobbie"
+  ],
+  "municipio": "Franca",
+  "uf": "SP",
+  "estilo": [
+    "rock",
+    "metal"
+  ],
+  "procura":  [
+    "vocal",
+    "bateria"
+  ],
+  "link": "instagram.com/banda"
+}
+
+
+////////////////////////////////////////// vendas
+
+{
+  "titulo": "Guitarra Strato Squier",
+  "usuario_id": "662c2ce9e363e968531bb19d",
+  "data": "2024-06-17T00:00:00Z",
+  "descricao": "Guitarra Squier Preta com pickups Fender, Cordas Novas.",
+  "municipio": "Franca",
+  "uf": "SP",
+  "preco": "599.99",
+  "midia": "foto_guitasquier.jpg"
+}

@@ -2,7 +2,6 @@ import mongoose from 'mongoose'
 
 const esquema = mongoose.Schema({
     // _id é automático no Mongoose
-    nome: { type: String, required: true},
     usuario_id: {
         type: mongoose.ObjectId,
         ref: 'Usuario', // Nome do Model referenciado
