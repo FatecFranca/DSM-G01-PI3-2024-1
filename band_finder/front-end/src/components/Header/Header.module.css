@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background-color: #22394D;
+   
+   
+}
+
+.links nav a {
+    margin-right: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  .botoes button a{
+    color: white;
+    text-decoration: none;
+  
+  }
+  .botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  
+  }
+  .botoes button{
+    background-color: #CC353C;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px ;
+    cursor: pointer;
+    color: white;
+
+  }
+  
+  
