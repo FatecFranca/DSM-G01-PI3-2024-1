@@ -1,0 +1,45 @@
+.login{
+    display: flex;
+    background-color: #1A212A;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100%;
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.formulario button{
+    width: 50%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #CC353C;
+    border: none;
+}
+
+.formulario input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.formulario label{
+    color: white;
+    padding: 10px;
+}
+
+h2{
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color:#22394D ;
+    border-radius: 15px;
+}
