@@ -1,38 +1,72 @@
 /* cadastroCliente.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1A212A; /* Cor de fundo da página inteira */
+}
 
-.cadastro-cliente {
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #22394D; /* Cor de fundo do formulário */
+    width: 500px;
+    border-radius: 20px;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items:right; ;
+    margin-top: 30px;
+    color: aliceblue;
     width: 300px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  .campo {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: inline-block;
-    width: 100px;
-    font-weight: bold;
-  }
-  
-  input {
-    width: calc(100% - 110px);
-    padding: 5px;
+    
+}
+.campo input{
+    background-color: #1A212A;
     border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+    outline: none;
+    border: none; 
+    height: 40px;  
+}
+.campo label{
+    color: aliceblue;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+
+
+.botao {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #CC353C; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    border: none; /* Remova a borda */
+    border-radius: 5px; /* Adicione bordas arredondadas */
+    padding: 10px 20px; /* Adicione preenchimento interno */
+    cursor: pointer; /* Altere o cursor ao passar */
+    text-align: center; /* Alinhe o texto ao centro */
+    outline: none; /* Remova o contorno */
+}
+
+/* Estilos para o botão hover */
+.botao:hover {
+    background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
+}
+
+.botao button{
+    background-color: #CC353C; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    border: none; /* Remova a borda */
+}
+
+body h2{
+    color: aliceblue;
+    text-align: center;
+}
