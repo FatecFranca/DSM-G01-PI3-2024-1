@@ -6,7 +6,6 @@ import styles from './Login.module.css';
 function Login() {
     return (
         <>
-        <Header/>
         <div className={styles.login}>
             <h2>Faça o Login no Band Finder</h2>
             <div className={styles.container}>
