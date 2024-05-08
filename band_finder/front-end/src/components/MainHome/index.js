@@ -65,3 +65,4 @@ Arthur pensa em fazer freelances em bandas de bar para completar sua renda nos f
         </div>          
     )
 }
+export default Conteudo;
