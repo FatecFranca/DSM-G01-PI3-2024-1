@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #22394D;
+    z-index: 1000; /* Garante que o header fique sobreposto aos outros elementos */
+}
+
+.logo img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto; /* Para manter a proporção */
+}
+
+.botoes {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.botoes button {
+    background-color: #CC353C;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.botoes {
+    display: flex;
+    gap: 1rem;
+    margin-right: 20px; /* Adicionando margem à direita para separar o botão "Sair" */
+}
+
+.botoes button:last-child {
+    margin-right: 10rem; /* Removendo a margem do último botão */
+}
