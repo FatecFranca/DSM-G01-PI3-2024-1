@@ -1,21 +1,20 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+    
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #22394D;
-    z-index: 1000; /* Garante que o header fique sobreposto aos outros elementos */
-}
 
-.logo img {
-    width: 100px; /* Ajuste conforme necessário */
-    height: auto; /* Para manter a proporção */
 }
-
+.imagem {
+    width: 100%;
+    height: auto;
+    margin-left: 30px;    
+}
 .botoes {
     display: flex;
     gap: 0.5rem;
@@ -29,13 +28,14 @@
     cursor: pointer;
     color: white;
     text-decoration: none;
+    width: 100px;
 }
 .botoes {
     display: flex;
     gap: 1rem;
-    margin-right: 20px; /* Adicionando margem à direita para separar o botão "Sair" */
+    margin-right: 10rem; /* Adicionando margem à direita para separar o botão "Sair" */
 }
 
 .botoes button:last-child {
-    margin-right: 10rem; /* Removendo a margem do último botão */
+    margin-right: 1rem; /* Removendo a margem do último botão */
 }
