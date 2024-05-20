@@ -4,9 +4,9 @@ import styles from './HeaderUser.module.css';
 import '../../../../assets/Background-Image.png';
 function HeaderUser(){
     return(
-        <header className={styles.header}>
+        <div className={styles.header}>
             
-            <img src="Background-image.png">
+            <img className={styles.imagem} src="Background-image.png">
             </img>
         
 
@@ -23,7 +23,7 @@ function HeaderUser(){
 
           
                 
-        </header>
+        </div>
 
     );
 }

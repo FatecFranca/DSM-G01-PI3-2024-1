@@ -4,6 +4,7 @@ import AnunciosPage from '../../components/Anuncios-pagUsuario/index';
 import ProjetosPage from '../../components/Projetos-pagUsuario/index';
 import styles from './PaginaUsuario.module.css';
 import HeaderUser from './componentsUser/HeaderUser';
+import InfosUser from './componentsUser/InfoUser';
 
 const PaginaUsuario = () => {
     const [paginaAtual, setPaginaAtual] = useState('posts'); // Inicialmente, exibir os posts
@@ -13,17 +14,17 @@ const PaginaUsuario = () => {
     };
 
     return (
-        <div>
+        <div className={styles.container}>
             
                 <HeaderUser/>
-               {/* <InfosUser/>*/}
+                <InfosUser/>
         
             <div className={styles.botoes}>
-                <button onClick={() => handleSelecionarPagina('posts')}>Posts</button>
-                <button onClick={() => handleSelecionarPagina('anuncios')}>Anúncios</button>
-                <button onClick={() => handleSelecionarPagina('projetos')}>Projetos</button>
+                <button className={styles.botao} onClick={() => handleSelecionarPagina('posts')}>Posts</button>
+                <button className={styles.botao} onClick={() => handleSelecionarPagina('anuncios')}>Anúncios</button>
+                <button className={styles.botao} onClick={() => handleSelecionarPagina('projetos')}>Projetos</button>
             </div>
-            <div>
+            <div className={styles.conteudo}>
                 {paginaAtual === 'posts' && <PostsPage />}
                 {paginaAtual === 'anuncios' && <AnunciosPage />}
                 {paginaAtual === 'projetos' && <ProjetosPage />}
