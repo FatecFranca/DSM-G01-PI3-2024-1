@@ -8,7 +8,7 @@ const estadosBrasil = [
 
 const influenciasOptions = [
   "Rock", "Pop", "Eletrônica", "Samba", "Reggae", "MPB", "Clássica", "Gospel",
-  "Forró", "Axé", "Sertanejo", "Outros"
+  "Forró", "Axé", "Sertanejo", "Hip Hop", "Rap", "Outros"
 ];
 
 const habilidadesOptions = [
@@ -64,7 +64,7 @@ const CadastroCliente = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (cliente.senha !== cliente.confirmSenha) {
-      setErrorMessage('Senhas não são iguais');
+      setErrorMessage('Senhas não conferem');
       return;
     }
     console.log('Dados do usuário:', cliente);
