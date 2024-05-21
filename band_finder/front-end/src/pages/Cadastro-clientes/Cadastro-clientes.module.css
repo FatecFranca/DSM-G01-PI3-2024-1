@@ -1,4 +1,3 @@
-/* cadastroCliente.css */
 body {
     margin: 0;
     padding: 0;
@@ -20,27 +19,25 @@ body {
 .campo {
     display: flex;
     flex-direction: column;
-    align-items:right; ;
+    align-items: right;
     margin-top: 30px;
     color: aliceblue;
     width: 300px;
-    
 }
-.campo input{
+.campo input, .campo textarea, .campo select {
     background-color: #1A212A;
+    color: aliceblue; /* Cor do texto branco */
     border-radius: 5px;
     outline: none;
     border: none; 
     height: 40px;  
+    padding: 10px; /* Adiciona preenchimento interno */
 }
-.campo label{
+.campo label {
     color: aliceblue;
     padding: 10px;
     font-size: 20px;
-    
 }
-
-
 
 .botao {
     margin-top: 50px;
@@ -60,13 +57,27 @@ body {
     background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
 }
 
-.botao button{
-    background-color: #CC353C; /* Cor de fundo vermelha */
-    color: white; /* Cor do texto */
-    border: none; /* Remova a borda */
+body h2 {
+    color: rgb(255, 243, 135);
+    text-align: center;
 }
 
-body h2{
-    color: aliceblue;
-    text-align: center;
+.bioTextArea {
+    width: 300px;
+    height: 400px;
+    resize: none;  /* Impede que o usuário redimensione o textarea */
+}
+
+/* Adicionando estilos de texto branco para os checkboxes e seus labels */
+.checkboxContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: space-between; /* Espaça os itens igualmente */
+}
+.checkboxItem {
+    width: 45%; /* Largura de cada coluna */
+    color: aliceblue; /* Cor do texto dos labels dos checkboxes */
+}
+.checkboxItem input {
+    margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
 }
