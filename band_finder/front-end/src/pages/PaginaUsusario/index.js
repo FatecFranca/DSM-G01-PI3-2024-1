@@ -20,9 +20,11 @@ const PaginaUsuario = () => {
                 <InfosUser/>
         
             <div className={styles.botoes}>
-                <button className={styles.botao} onClick={() => handleSelecionarPagina('posts')}>Posts</button>
-                <button className={styles.botao} onClick={() => handleSelecionarPagina('anuncios')}>Anúncios</button>
-                <button className={styles.botao} onClick={() => handleSelecionarPagina('projetos')}>Projetos</button>
+                <div className={styles.botao}>
+                    <button onClick={() => handleSelecionarPagina('posts')}>Posts</button>
+                    <button onClick={() => handleSelecionarPagina('anuncios')}>Anúncios</button>
+                    <button onClick={() => handleSelecionarPagina('projetos')}>Projetos</button>
+                </div>
             </div>
             <div className={styles.conteudo}>
                 {paginaAtual === 'posts' && <PostsPage />}
