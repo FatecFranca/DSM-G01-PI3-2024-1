@@ -11,9 +11,10 @@ function Header(){
             
             <div className={styles.links}>
                 <nav>
-                    <a href="#">O que é</a>
-                    <a href="#">Nossos Usuários</a>
-                    <a href="#">Contatos</a>
+                    <a href="#">Time Line</a>
+                    <a href="#">Músicos</a>
+                    <a href="#">Projetos</a>
+                    <a href="#">Anúncios</a>
                 </nav>    
 
             </div>
