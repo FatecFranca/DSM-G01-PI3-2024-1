@@ -9,11 +9,13 @@ import CadastroUsuario from './pages/CadastroUsuario';
 import CriarAnuncio from './pages/CriarAnuncio'
 import CriarPost from './pages/CriarPosts';
 import PaginaUsuario from './pages/PaginaUsusario';
+import DataFetcher from './pages/DataFetcher.js'
 
 function AppRoutes (){
     return(
         <BrowserRouter>
         <Routes>
+        <Route path="/data" element={DataFetcher} /> 
             <Route path="/" element={<Home />} />
             <Route path="/timeline" element={<TimeLine/>} />
             <Route path="/usuarios" element={<Usuarios/>} />
