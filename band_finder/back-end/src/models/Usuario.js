@@ -17,6 +17,7 @@ const esquema = mongoose.Schema({
     youtube: { type: String, required: false },
     facebook: { type: String, required: false },
     senha: { type: String, required: true },
+    confirmSenha: { type: String, required: true },
 })
 /*Parâmetros de mongoose.model
     1° ~> Nome do model (inicial maiuscula)
