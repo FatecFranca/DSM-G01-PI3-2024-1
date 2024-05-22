@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const conectarBancoDeDados = async () => {
     try {
-        await mongoose.connect('SUA_URI_DE_CONEXAO_AQUI', {
+        await mongoose.connect('mongodb+srv://allisonrps:Password123@cluster0.js5vzpa.mongodb.net/bandfinder', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
