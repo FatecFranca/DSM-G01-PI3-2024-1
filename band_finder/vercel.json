@@ -2,28 +2,28 @@
   "version": 2,
   "builds": [
     {
-      "src": "front-end/build",
+      "src": "band_finder/front-end/build",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dest"
       }
     },
     {
-      "src": "back-end/package.json",
+      "src": "band_finder/back-end/package.json",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["back-end/.env"]
+        "includeFiles": ["band_finder/back-end/.env"]
       }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/back-end/src/$1"
+      "dest": "band_finder/back-end/src/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/front-end/build/$1"
+      "dest": "band_finder/front-end/build/$1"
     }
   ]
 }
