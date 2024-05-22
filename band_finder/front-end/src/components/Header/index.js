@@ -2,39 +2,32 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import '../../assets/Background-Image.png';
-function Header(){
-    return(
+import logo from '../../assets/logo_bandfinder.png';
+
+function Header() {
+    return (
         <header className={styles.header}>
-            
-            <img src="Background-image.png">
-            </img>
-            
+            <img src={logo} alt="Logo Bandfinder" className={styles.logo} />
+
             <div className={styles.links}>
                 <nav>
-                    <a href="#">Time Line</a>
-                    <a href="#">Músicos</a>
-                    <a href="#">Projetos</a>
-                    <a href="#">Anúncios</a>
-                </nav>    
-
+                    <Link to="/timeline">Time Line</Link>
+                    <Link to="/usuarios">Usuários</Link>
+                    <Link to="/projetos">Projetos</Link>
+                    <Link to="/anuncios">Anúncios</Link>
+                </nav>
             </div>
 
             <div className={styles.botoes}>
-                <button >
-                    <a Link to="/login">Login</a>
+                <button>
+                    <Link to="/login">Login</Link>
                 </button>
                 <button>
-                    <a Link to="/cadastro">Cadastre-se</a>
+                    <Link to="/cadastro">Cadastre-se</Link>
                 </button>
             </div>
-            
-       
-
-          
-                
         </header>
-
     );
 }
-export default Header;
 
+export default Header;

@@ -1,7 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import CadastroCliente from './pages/Cadastro-clientes';
+import TimeLine from './pages/TimeLine';
+import Usuarios from './pages/Usuarios';
+import Projetos from './pages/Projetos';
+import Anuncios from './pages/Anuncios';
+import CadastroUsuario from './pages/CadastroUsuario';
 import CriarAnuncio from './pages/CriarAnuncio'
 import CriarPost from './pages/CriarPosts';
 import PaginaUsuario from './pages/PaginaUsusario';
@@ -11,11 +15,15 @@ function AppRoutes (){
         <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/timeline" element={<TimeLine/>} />
+            <Route path="/usuarios" element={<Usuarios/>} />
+            <Route path="/anuncios" element={<Anuncios/>} />
+            <Route path="/projetos" element={<Projetos/>} />
             <Route path="/login" element={<Login/>} />
-            <Route path="/cadastro" element={<CadastroCliente/>} />
+            <Route path="/cadastro" element={<CadastroUsuario/>} />
             <Route path="/vendas" element={<CriarAnuncio/>} />
-            <Route path="/post" element={<CriarPost/>} />
-            <Route path="/user" element={<PaginaUsuario/>} />
+            <Route path="/posts" element={<CriarPost/>} />
+            <Route path="/users" element={<PaginaUsuario/>} />
 
         </Routes>
         
