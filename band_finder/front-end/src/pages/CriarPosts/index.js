@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import styles from './CriarPost.module.css';
 
 const CriarPost = () => {
     const [post, setPost] = useState({
@@ -46,14 +47,26 @@ const CriarPost = () => {
     };
 
     return (
-        <div>
-            <h2>Criar Post</h2>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="usuario_id" value={post.usuario_id} onChange={handleChange} placeholder="ID do Usuário" required />
-                <input type="date" name="data" value={post.data} onChange={handleChange} required />
-                <textarea name="descricao" value={post.descricao} onChange={handleChange} placeholder="Descrição" required />
-                <input type="file" name="midia" onChange={handleMidiaChange} accept="image/*" required /> {/* Campo de entrada para a foto */}
-                <button type="submit">Enviar</button>
+        <div className={styles.container}>
+            <h2 className={styles.titulo}>Criar Post</h2>
+            <form className={styles.form} onSubmit={handleSubmit}>
+                <div className={styles.campo}>
+                    <label htmlFor="usuario_id">ID do Usuário:</label>
+                    <input type="text" id="usuario_id" name="usuario_id" value={post.usuario_id} onChange={handleChange} placeholder="ID do Usuário" required />
+                </div>
+                <div className={styles.campo}>
+                    <label htmlFor="data">Data:</label>
+                    <input type="date" id="data" name="data" value={post.data} onChange={handleChange} required />
+                </div>
+                <div className={styles.campo}>
+                    <label htmlFor="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" value={post.descricao} onChange={handleChange} placeholder="Descrição" className={styles.bioTextArea} required />
+                </div>
+                <div className={styles.campo}>
+                    <label htmlFor="midia">Mídia:</label>
+                    <input type="file" id="midia" name="midia" onChange={handleMidiaChange} accept="image/*" required />
+                </div>
+                <button className={styles.botao} type="submit">Enviar</button>
             </form>
         </div>
     );

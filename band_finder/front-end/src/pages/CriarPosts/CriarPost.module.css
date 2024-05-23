@@ -8,7 +8,7 @@ body {
     background-color: #1A212A; /* Cor de fundo da página inteira */
 }
 
-.cadastroUsuario {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +19,12 @@ body {
     padding: 20px;
     box-sizing: border-box; /* Inclui o padding dentro da largura */
     margin: 20px;
+}
+
+.titulo {
+    color: rgb(255, 243, 135);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .form {
@@ -55,14 +61,13 @@ body {
     font-size: 16px;
 }
 
-.botao {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+textarea {
+    height: 100px;
+    resize: none; /* Impede que o usuário redimensione o textarea */
 }
 
-.botao button {
+.botao {
+    margin-top: 30px;
     background-color: #CC353C; /* Cor de fundo vermelha */
     color: white; /* Cor do texto */
     border: none; /* Remova a borda */
@@ -72,46 +77,9 @@ body {
     text-align: center; /* Alinhe o texto ao centro */
     outline: none; /* Remova o contorno */
     width: 100%;
-    max-width: 300px;
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
 }
 
 /* Estilos para o botão hover */
-.botao button:hover {
+.botao:hover {
     background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
-}
-
-h2 {
-    color: rgb(255, 243, 135);
-    text-align: center;
-    margin-top: 0;
-}
-
-.bioTextArea {
-    height: 300px;
-    resize: none; /* Impede que o usuário redimensione o textarea */
-}
-
-.checkboxContainer {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha */
-    justify-content: flex-start; /* Alinha os itens à esquerda */
-}
-
-.checkboxItem {
-    width: 45%; /* Largura de cada coluna */
-    color: aliceblue; /* Cor do texto dos labels dos checkboxes */
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Adiciona espaço entre os checkboxes */
-}
-
-.checkboxItem input {
-    margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
-    transform: scale(0.4); /* Reduz o tamanho das checkboxes */
-}
-.errorMessage {
-    color: red;
-    text-align: center;
-    margin-top: 10px;
 }

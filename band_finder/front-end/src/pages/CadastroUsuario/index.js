@@ -94,7 +94,7 @@ const CadastroUsuario = () => {
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
           <div className={styles.campo}>
-            <h2>- DADOS PESSOAIS -</h2>
+            <h2>           - DADOS PESSOAIS -</h2>
             <label htmlFor="nome">NOME:</label>
             <input type="text" id="nome" name="nome" value={usuario.nome} onChange={handleChange} required />
           </div>
