@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import styles from './InfoUser.module.css';
 import '../../../../assets/Background-Image.png'
+import Header from '../../../../components/Header';
 
 
 const InfoUser = () => {
     
 
     return (
+      
      <div className={styles.container}>
+        <Header/>
         <div className={styles.imagem}>
             
             <div className={styles.foto}>
