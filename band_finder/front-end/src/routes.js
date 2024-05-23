@@ -12,6 +12,8 @@ import CriarProjeto from './pages/CriarProjeto';
 import PaginaUsuario from './pages/PaginaUsusario';
 import DataFetcher from './pages/DataFetcher.js'
 import PostsPage from './pages/PaginaTimeLine/index.js';
+import AnunciosPage from './pages/PaginaAnuncios/index.js';
+
 
 function AppRoutes (){
     return(
@@ -35,7 +37,7 @@ function AppRoutes (){
             <Route path="/post" element={<CriarPost/>} />
             <Route path="/projeto" element={<CriarProjeto/>} />
             <Route path="/timeline" element={<PostsPage/>} />
-
+            <Route path="/Anuncios" element={<AnunciosPage/>} />
         </Routes>
         
         </BrowserRouter>

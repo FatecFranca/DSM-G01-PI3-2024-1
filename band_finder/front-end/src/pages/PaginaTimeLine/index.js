@@ -12,12 +12,14 @@ const PostsPage = () => {
       {
         _id: '1',
         usuario_id: '123',
+        nome: 'José',
         data: new Date().toISOString(),
-        descricao: 'Descrição do Post 1',
+        descricao: 'Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1Descrição do Post 1',
         midia: 'https://via.placeholder.com/150'
       },
       {
         _id: '2',
+        nome: 'Maria',
         usuario_id: '456',
         data: new Date().toISOString(),
         descricao: 'Descrição do Post 2',
@@ -26,6 +28,7 @@ const PostsPage = () => {
       {
         _id: '3',
         usuario_id: '789',
+        nome: 'Pedro',
         data: new Date().toISOString(),
         descricao: 'Descrição do Post 3',
         midia: 'https://via.placeholder.com/150'
@@ -33,6 +36,7 @@ const PostsPage = () => {
       {
         _id: '4',
         usuario_id: '101',
+        nome: 'Ana',
         data: new Date().toISOString(),
         descricao: 'Descrição do Post 4',
         midia: 'https://via.placeholder.com/150'
@@ -40,6 +44,7 @@ const PostsPage = () => {
       {
         _id: '5',
         usuario_id: '102',
+        nome: 'Carla',
         data: new Date().toISOString(),
         descricao: 'Descrição do Post 5',
         midia: 'https://via.placeholder.com/150'
@@ -47,6 +52,7 @@ const PostsPage = () => {
       {
         _id: '6',
         usuario_id: '103',
+        nome: 'Carlos',
         data: new Date().toISOString(),
         descricao: 'Descrição do Post 6',
         midia: 'https://via.placeholder.com/150'
