@@ -1,0 +1,45 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1200px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas por linha */
+    gap: 20px;
+  }
+  
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr); /* 2 colunas por linha em telas menores */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr; /* 1 coluna por linha em telas ainda menores */
+
+    }
+}
+   
+    @media (max-width: 440px) {
+        .container {margin-top: 1800px};
+    }
+    @media (max-width: 370px) {
+        .container {margin-top: 2100px};
+    }
+  
+  

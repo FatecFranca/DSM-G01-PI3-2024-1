@@ -31,4 +31,11 @@
     margin: 0;
     color: #666;
   }
-  
+  .content1{
+    padding: 15px;
+  }
+  .content1 h2 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
