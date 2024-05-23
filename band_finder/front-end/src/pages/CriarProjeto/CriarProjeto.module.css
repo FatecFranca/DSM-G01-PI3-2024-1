@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1A212A; /* Cor de fundo da página inteira */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #22394D; /* Cor de fundo do formulário */
+    width: 500px;
+    border-radius: 20px;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 30px;
+    color: aliceblue;
+    width: 300px;
+}
+.campo input, .campo textarea, .campo select {
+    background-color: #1A212A;
+    color: aliceblue; /* Cor do texto branco */
+    border-radius: 5px;
+    outline: none;
+    border: none; 
+    height: 40px;  
+    padding: 10px; /* Adiciona preenchimento interno */
+}
+.campo label {
+    color: aliceblue;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.botao {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #CC353C; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    border: none; /* Remova a borda */
+    border-radius: 5px; /* Adicione bordas arredondadas */
+    padding: 10px 20px; /* Adicione preenchimento interno */
+    cursor: pointer; /* Altere o cursor ao passar */
+    text-align: center; /* Alinhe o texto ao centro */
+    outline: none; /* Remova o contorno */
+}
+
+/* Estilos para o botão hover */
+.botao:hover {
+    background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
+}
+
+body h2 {
+    color: rgb(255, 243, 135);
+    text-align: center;
+}
+
+.bioTextArea {
+    width: 300px;
+    height: 400px;
+    resize: none;  /* Impede que o usuário redimensione o textarea */
+}
+
+/* Adicionando estilos de texto branco para os checkboxes e seus labels */
+.checkboxContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: space-between; /* Espaça os itens igualmente */
+}
+.checkboxItem {
+    width: 45%; /* Largura de cada coluna */
+    color: aliceblue; /* Cor do texto dos labels dos checkboxes */
+}
+.checkboxItem input {
+    margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
+}

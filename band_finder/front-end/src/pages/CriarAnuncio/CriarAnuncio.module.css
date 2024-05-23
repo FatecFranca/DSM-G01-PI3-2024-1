@@ -1,57 +1,80 @@
 .container {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    background-color: #1A212A; /* Cor de fundo para a página inteira */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1A212A; /* Cor de fundo da página inteira */
 }
 
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 50px;
-    background-color: #22394D; /* Cor de fundo para o formulário */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o formulário */
+    background-color: #22394D; /* Cor de fundo do formulário */
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px; /* Adiciona espaçamento interno */
 }
 
-.form input,
-.form textarea,
-.form button {
-    margin-bottom: 10px;
-    padding: 15px;
-    width: 100%;
-    border: 1px solid #ccc; /* Borda para os inputs e textarea */
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 20px; /* Adiciona espaço acima dos campos */
+    color: aliceblue;
+    width: 80%; /* Define a largura dos campos */
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    background-color: #1A212A;
+    color: aliceblue; /* Cor do texto branco */
     border-radius: 5px;
     outline: none;
-}
-
-.form input[type="file"] {
-    margin-bottom: 20px;
-}
-
-.form button {
-    background-color: #CC353C;
-    color: #fff;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.1s;
+    height: 40px;
+    padding: 10px; /* Adiciona preenchimento interno */
+    width: 100%; /* Define a largura total */
+    margin-top: 5px; /* Adiciona espaço acima dos campos */
+    margin-bottom: 10px; /* Adiciona espaço abaixo dos campos */
 }
 
-.form button:hover {
-    background-color: #be0009;
+.campo textarea {
+    height: 120px; /* Define a altura do textarea */
+}
+
+.campo select {
+    height: 45px; /* Define a altura do select */
+}
+
+.campo label {
+    color: aliceblue;
+    padding: 5px 0; /* Adiciona espaço acima e abaixo do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+.botao {
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+    background-color: #CC353C; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    padding: 10px 20px; /* Adiciona preenchimento interno */
+    cursor: pointer; /* Altera o cursor ao passar */
+    text-align: center; /* Alinha o texto ao centro */
+    outline: none; /* Remove o contorno */
+}
+
+/* Estilos para o botão hover */
+.botao:hover {
+    background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
 }
 
 .titulo {
-    text-align: center; /* Centraliza o texto */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
-    color:aliceblue;
-    font-size: 50px;
+    color: rgb(255, 243, 135);
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
 }
