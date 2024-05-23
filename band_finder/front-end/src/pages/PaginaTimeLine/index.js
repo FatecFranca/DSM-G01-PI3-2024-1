@@ -1,0 +1,72 @@
+import React, { useState, useEffect } from 'react';
+import PostCard from '../../components/PostCard';
+import styles from './TimeLine.module.css';
+import Header from '../../components/Header';
+
+const PostsPage = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    // Simulação de carregamento de dados
+    const mockPosts = [
+      {
+        _id: '1',
+        usuario_id: '123',
+        data: new Date().toISOString(),
+        descricao: 'Descrição do Post 1',
+        midia: 'https://via.placeholder.com/150'
+      },
+      {
+        _id: '2',
+        usuario_id: '456',
+        data: new Date().toISOString(),
+        descricao: 'Descrição do Post 2',
+        midia: 'https://via.placeholder.com/150'
+      },
+      {
+        _id: '3',
+        usuario_id: '789',
+        data: new Date().toISOString(),
+        descricao: 'Descrição do Post 3',
+        midia: 'https://via.placeholder.com/150'
+      },
+      {
+        _id: '4',
+        usuario_id: '101',
+        data: new Date().toISOString(),
+        descricao: 'Descrição do Post 4',
+        midia: 'https://via.placeholder.com/150'
+      },
+      {
+        _id: '5',
+        usuario_id: '102',
+        data: new Date().toISOString(),
+        descricao: 'Descrição do Post 5',
+        midia: 'https://via.placeholder.com/150'
+      },
+      {
+        _id: '6',
+        usuario_id: '103',
+        data: new Date().toISOString(),
+        descricao: 'Descrição do Post 6',
+        midia: 'https://via.placeholder.com/150'
+      },
+    ];
+    setPosts(mockPosts);
+  }, []);
+
+  return (
+
+    <div className={styles.container}>
+        <Header/>
+      <h1>Posts</h1>
+      <div className={styles.grid}>
+        {posts.map((post) => (
+          <PostCard key={post._id} post={post} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default PostsPage;

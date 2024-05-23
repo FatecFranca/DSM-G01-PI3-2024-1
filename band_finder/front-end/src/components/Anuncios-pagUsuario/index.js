@@ -1,32 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import styles from './Anuncios-pagUsuario.module.css';
 const AnunciosPage = () => {
-  // Estado para armazenar os anúncios
   const [anuncios, setAnuncios] = useState([]);
 
-  // Função para carregar os anúncios
   const carregarAnuncios = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/anuncios');
+      const response = await axios.get('http://localhost:3000/api/anuncios'); // Ajuste a URL conforme necessário
       setAnuncios(response.data);
     } catch (error) {
       console.error('Erro ao carregar anúncios:', error);
     }
   };
 
-  // Carregar os anúncios ao montar o componente
   useEffect(() => {
     carregarAnuncios();
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Anúncios</h1>
-      <div>
-        {/* Mapear os anúncios e exibir cada um */}
+      <div className={styles.anunciosList}>
         {anuncios.map((anuncio) => (
-          <div key={anuncio.id}>
+          <div key={anuncio._id} className={styles.anuncioItem}>
             <h3>{anuncio.titulo}</h3>
             <p>{anuncio.descricao}</p>
             <p>Preço: R$ {anuncio.preco}</p>
