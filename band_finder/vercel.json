@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "front-end",
+      "src": "front-end/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
       }
     },
     {
-      "src": "back-end",
+      "src": "back-end/package.json",
       "use": "@vercel/node",
       "config": {
         "includeFiles": ["back-end/.env"]
@@ -27,3 +27,4 @@
     }
   ]
 }
+
