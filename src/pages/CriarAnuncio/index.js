@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from './CriarAnuncio.module.css';
 
@@ -11,13 +11,21 @@ const CriarAnuncio = () => {
   const [venda, setVenda] = useState({
     titulo: '',
     usuario_id: '',
-    data: '',
+    data: new Date().toISOString().slice(0, 10), // Define a data atual no formato 'YYYY-MM-DD'
     descricao: '',
     municipio: '',
     uf: '',
     preco: '',
     midia: null
   });
+
+  // Define o ID do usuário logado ao montar o componente
+  useEffect(() => {
+    const usuarioId = localStorage.getItem('usuario_id');
+    if (usuarioId) {
+      setVenda(prevVenda => ({ ...prevVenda, usuario_id: usuarioId }));
+    }
+  }, []);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -51,7 +59,7 @@ const CriarAnuncio = () => {
       setVenda({
         titulo: '',
         usuario_id: '',
-        data: '',
+        data: new Date().toISOString().slice(0, 10),
         descricao: '',
         municipio: '',
         uf: '',
@@ -65,23 +73,40 @@ const CriarAnuncio = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.titulo}>Criar Anúncio</h2>
-
+      <h2 className={styles.titulo}>Anúncio de Venda</h2>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <input type="text" name="titulo" value={venda.titulo} onChange={handleChange} placeholder="Título" required />
-        <input type="text" name="usuario_id" value={venda.usuario_id} onChange={handleChange} placeholder="ID do Usuário" required />
-        <input type="date" name="data" value={venda.data} onChange={handleChange} required />
-        <textarea name="descricao" value={venda.descricao} onChange={handleChange} placeholder="Descrição" />
-        <input type="text" name="municipio" value={venda.municipio} onChange={handleChange} placeholder="Município" required />
-        <select name="uf" value={venda.uf} onChange={handleChange} required>
-          <option value="">Selecione o Estado</option>
-          {estadosBrasil.map(estado => (
-            <option key={estado} value={estado}>{estado}</option>
-          ))}
-        </select>
-        <input type="number" name="preco" value={venda.preco} onChange={handleChange} placeholder="Preço" required />
-        <input type="file" name="midia" onChange={handleMidiaChange} accept="image/*" required />
-        <button type="submit">Salvar</button>
+        <div className={styles.campo}>
+          <label htmlFor="titulo">Título:</label>
+          <input type="text" id="titulo" name="titulo" value={venda.titulo} onChange={handleChange} required />
+        </div>
+        <div className={styles.campo}>
+          <label htmlFor="descricao">Descrição:</label>
+          <textarea id="descricao" name="descricao" value={venda.descricao} onChange={handleChange} required />
+        </div>
+        <div className={styles.campo}>
+          <label htmlFor="municipio">Município:</label>
+          <input type="text" id="municipio" name="municipio" value={venda.municipio} onChange={handleChange} required />
+        </div>
+        <div className={styles.campo}>
+          <label htmlFor="uf">Estado:</label>
+          <select id="uf" name="uf" value={venda.uf} onChange={handleChange} required>
+            <option value="">Selecione o Estado</option>
+            {estadosBrasil.map(estado => (
+              <option key={estado} value={estado}>{estado}</option>
+            ))}
+          </select>
+        </div>
+        <div className={styles.campo}>
+          <label htmlFor="preco">Preço:</label>
+          <input type="number" id="preco" name="preco" value={venda.preco} onChange={handleChange} required />
+        </div>
+        <div className={styles.campo}>
+          <label htmlFor="midia">Mídia:</label>
+          <input type="file" id="midia" name="midia" onChange={handleMidiaChange} accept="image/*" required />
+        </div>
+        <div className={styles.botao}>
+          <button type="submit">Salvar</button>
+        </div>
       </form>
     </div>
   );

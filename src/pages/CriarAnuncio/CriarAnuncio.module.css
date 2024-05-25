@@ -1,80 +1,129 @@
-.container {
+/* Define o estilo para o corpo da página */
+body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #1A212A; /* Cor de fundo da página inteira */
+    font-family: Arial, sans-serif;
+    background-color: #1A212A;
+    color: #fff;
+    overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
+/* Define o estilo para o cabeçalho fixo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #22394D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 80px; /* Define a altura do cabeçalho */
+}
+
+/* Define o estilo para o contêiner principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1A212A;
+    margin-top: 80px; /* Adiciona espaço suficiente para o cabeçalho fixo */
+    min-height: calc(100vh - 80px); /* Garante que o contêiner ocupe pelo menos a altura total da tela menos a altura do cabeçalho */
+    box-sizing: border-box;
+    overflow-y: auto; /* Permite rolagem vertical se necessário */
+}
+
+/* Define o estilo para o formulário */
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #22394D; /* Cor de fundo do formulário */
-    width: 500px;
+    background-color: #22394D;
+    width: 100%;
+    max-width: 500px;
     border-radius: 20px;
-    padding: 20px; /* Adiciona espaçamento interno */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
+/* Define o estilo para os campos do formulário */
 .campo {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin-top: 20px; /* Adiciona espaço acima dos campos */
+    align-items: flex-start;
+    margin-top: 20px;
     color: aliceblue;
-    width: 80%; /* Define a largura dos campos */
+    width: 100%;
 }
 
+/* Define o estilo para os rótulos dos campos */
+.campo label {
+    color: aliceblue;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Define o estilo para os campos de entrada */
 .campo input,
 .campo textarea,
 .campo select {
     background-color: #1A212A;
-    color: aliceblue; /* Cor do texto branco */
+    color: aliceblue;
     border-radius: 5px;
     outline: none;
     border: none;
-    height: 40px;
-    padding: 10px; /* Adiciona preenchimento interno */
-    width: 100%; /* Define a largura total */
-    margin-top: 5px; /* Adiciona espaço acima dos campos */
-    margin-bottom: 10px; /* Adiciona espaço abaixo dos campos */
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
+/* Define a altura específica para o campo de texto */
 .campo textarea {
-    height: 120px; /* Define a altura do textarea */
+    height: 120px;
 }
 
+/* Define a altura específica para o campo de seleção */
 .campo select {
-    height: 45px; /* Define a altura do select */
+    height: 45px;
 }
 
-.campo label {
-    color: aliceblue;
-    padding: 5px 0; /* Adiciona espaço acima e abaixo do texto */
-    font-size: 16px; /* Define o tamanho da fonte */
-}
-
+/* Define o estilo para o contêiner do botão */
 .botao {
-    margin-top: 20px; /* Adiciona espaço acima do botão */
-    background-color: #CC353C; /* Cor de fundo vermelha */
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    padding: 10px 20px; /* Adiciona preenchimento interno */
-    cursor: pointer; /* Altera o cursor ao passar */
-    text-align: center; /* Alinha o texto ao centro */
-    outline: none; /* Remove o contorno */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
 }
 
-/* Estilos para o botão hover */
-.botao:hover {
-    background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
+/* Define o estilo para o botão */
+.botao button {
+    background-color: #CC353C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    width: 100%;
 }
 
+/* Define o estilo para o botão quando o mouse passa por cima */
+.botao button:hover {
+    background-color: #AF2E33;
+}
+
+/* Define o estilo para o título */
 .titulo {
     color: rgb(255, 243, 135);
     text-align: center;
-    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    margin-bottom: 20px;
+    font-size: 24px;
+    width: 100%;
 }

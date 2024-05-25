@@ -1,26 +1,29 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from '../../components/Header';
+import { Link } from 'react-router-dom';
 import styles from './Login.module.css';
 
 function Login() {
     return (
-        <>
-        <div className={styles.login}>
-            <h2>Faça o Login no Band Finder</h2>
-            <div className={styles.container}>
-                <form className={styles.formulario}>
+        <div className={styles.container}>
+            <h2 className={styles.titulo}>LOGIN</h2>
+            <form className={styles.formulario}>
+                <div className={styles.campo}>
                     <label htmlFor="email">Email:</label>
                     <input type="email" id="email" name="email" required />
+                </div>
+                <div className={styles.campo}>
                     <label htmlFor="password">Senha:</label>
                     <input type="password" id="password" name="password" required />
-                    <br></br>
-                    <button type="submit">Entrar</button>
-                    <a href="#">cadastrar-se</a>
-                </form>
-            </div>
+                </div>
+                <div className={styles.botao}>
+                    <button type="submit">ENTRAR</button>
+                </div>
+                <div className={styles.botao}>
+                    <Link to="/cadastro">CADASTRE-SE</Link>
+                </div>
+            </form>
         </div>
-        </>
     );
 }
-export default Login
+
+export default Login;
