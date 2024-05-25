@@ -1,45 +1,82 @@
-.login{
-    display: flex;
-    background-color: #1A212A;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100%;
-
-}
-
-.formulario{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    justify-content: center; /* Centraliza na horizontal */
+    width: 200%;
+    background-color: #22394D;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto 0; /* Margem superior automática para centralização na vertical */
 }
-.formulario button{
-    width: 50%;
+
+
+.titulo {
+    color: rgb(218, 255, 7);
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhamento à esquerda */
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+    width: 100%;
+}
+
+.campo input {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.campo label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+}
+
+.botao button, .botao a {
+    width: 50%; /* Mesmo tamanho do Criar Post */
     height: 50px;
     margin-top: 10px;
     background-color: #CC353C;
     border: none;
-}
-
-.formulario input{
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-}
-
-.formulario label{
+    border-radius: 5px;
     color: white;
-    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Tamanho da fonte ajustado */
 }
 
-h2{
-    color: white;
+.botao button:hover, .botao a:hover {
+    background-color: #AF2E33;
 }
-.container{
+
+.botao a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    background-color:#22394D ;
-    border-radius: 15px;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.botao a:hover {
+    text-decoration-style: solid;
 }
