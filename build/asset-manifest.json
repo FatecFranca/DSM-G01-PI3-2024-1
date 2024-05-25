@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e35e12d.css",
+    "main.js": "/static/js/main.ed1154f2.js",
+    "static/media/Background-Image.png": "/static/media/Background-Image.b9a91564f3716978d984.png",
+    "static/media/logo_bandfinder.png": "/static/media/logo_bandfinder.84bca0d54256c75cd71b.png",
+    "index.html": "/index.html",
+    "main.5e35e12d.css.map": "/static/css/main.5e35e12d.css.map",
+    "main.ed1154f2.js.map": "/static/js/main.ed1154f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e35e12d.css",
+    "static/js/main.ed1154f2.js"
+  ]
+}
