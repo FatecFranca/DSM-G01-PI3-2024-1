@@ -6,7 +6,7 @@ const CriarPost = () => {
     const [post, setPost] = useState({
         usuario_id: '',
         data: '',
-        descricao: '',
+        texto: '',
         midia: null // Inicialize midia como null para permitir a seleção de uma foto
     });
 
@@ -38,7 +38,7 @@ const CriarPost = () => {
             setPost({
                 usuario_id: '',
                 data: '',
-                descricao: '',
+                texto: '',
                 midia: null
             });
         } catch (error) {
@@ -48,25 +48,20 @@ const CriarPost = () => {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.titulo}>Criar Post</h2>
+            <h2 className={styles.titulo}>CRIAR POST</h2>
             <form className={styles.form} onSubmit={handleSubmit}>
+
+{/* pegar a data do sistema */}
+
                 <div className={styles.campo}>
-                    <label htmlFor="usuario_id">ID do Usuário:</label>
-                    <input type="text" id="usuario_id" name="usuario_id" value={post.usuario_id} onChange={handleChange} placeholder="ID do Usuário" required />
+                    <label htmlFor="texto">TEXTO:</label>
+                    <textarea id="texto" name="texto" value={post.texto} onChange={handleChange} placeholder="" className={styles.bioTextArea} required />
                 </div>
                 <div className={styles.campo}>
-                    <label htmlFor="data">Data:</label>
-                    <input type="date" id="data" name="data" value={post.data} onChange={handleChange} required />
-                </div>
-                <div className={styles.campo}>
-                    <label htmlFor="descricao">Descrição:</label>
-                    <textarea id="descricao" name="descricao" value={post.descricao} onChange={handleChange} placeholder="Descrição" className={styles.bioTextArea} required />
-                </div>
-                <div className={styles.campo}>
-                    <label htmlFor="midia">Mídia:</label>
+                    <label htmlFor="midia">MÍDIA:</label>
                     <input type="file" id="midia" name="midia" onChange={handleMidiaChange} accept="image/*" required />
                 </div>
-                <button className={styles.botao} type="submit">Enviar</button>
+                <button className={styles.botao} type="submit">ENVIAR</button>
             </form>
         </div>
     );

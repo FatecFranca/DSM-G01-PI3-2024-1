@@ -201,9 +201,8 @@ const CadastroUsuario = () => {
             <input type="password" id="confirmSenha" name="confirmSenha" value={usuario.confirmSenha} onChange={handleChange} required />
           </div>
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-          <div className={styles.botao}>
-            <button type="submit">Salvar</button>
-          </div>
+          <button className={styles.botao} type="submit">ENVIAR</button>
+
         </form>
       </div>
     </div>
