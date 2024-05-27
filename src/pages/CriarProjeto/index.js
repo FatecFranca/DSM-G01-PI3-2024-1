@@ -150,9 +150,7 @@ const CadastroProjeto = () => {
             <input type="text" id="link" name="link" value={projeto.link} onChange={handleChange} required />
           </div>
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-          <div className={styles.botao}>
-            <button type="submit">Salvar</button>
-          </div>
+          <button className={styles.botao} type="submit">ENVIAR</button>
         </form>
       </div>
     </div>
