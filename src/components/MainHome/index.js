@@ -18,8 +18,8 @@ por critérios específicos e entrem em contato diretamente uns com os outros, f
 
 
             <fieldset>
-                <div className={styles.container1}>
-              <div className={styles.texto2}>
+                <div className={styles.container}>
+              <div className={styles.texto}>
                 <h2>Gabriela</h2>
                 <p>Gabriela, 33 anos, é uma vocalista talentosa e muito experiente, ela é formada em música
                      e viveu isso desde a sua infância. Através do BandFinder ela conseguiu encontrar músicos
@@ -28,13 +28,13 @@ por critérios específicos e entrem em contato diretamente uns com os outros, f
 Ela precisava de pessoas que possuíssem a mesma mentalidade e vontade para levar o projeto pra frente, conhecendo novas
  pessoas em sua localidade através do BandFinder, Gabriela conseguiu alcançar seu objetivo</p>
                 </div>
-                <img className={styles.banner2} src={banner}/>
+                <img className={styles.banner} src={banner}/>
               </div>
             </fieldset>
          
             <fieldset>
-                <div className={styles.container2}>
-              <div className={styles.texto3}>
+                <div className={styles.container}>
+              <div className={styles.texto}>
                 <h2>Arthur</h2>
                 <p>Arthur, 25 anos, não vive de música, trabalha no comércio durante a semana, mas possui habilidades
                      musicais com sua guitarra e violão, toca todos os estilos musicais, de sertanejo ao rock.
@@ -42,13 +42,13 @@ Arthur pensa em fazer freelances em bandas de bar para completar sua renda nos f
  ele encontrou bandas/pessoas com esse objetivo,  preenchendo sua agenda do final de semana e completando o espaço de
   guitarrista em alguns projetos de bares.</p>
                 </div>
-                <img className={styles.banner2} src={banner}/>
+                <img className={styles.banner} src={banner}/>
               </div>
             </fieldset>
            
             <fieldset>
-                <div className={styles.container3}>
-              <div className={styles.texto4}>
+                <div className={styles.container}>
+              <div className={styles.texto}>
                 <h2>João Ferreira</h2>
                 <p>João Ferreira é o proprietário de uma casa de shows localizada no centro da
                      cidade. Ele é apaixonado por música e está sempre em busca de novos talentos
@@ -58,11 +58,14 @@ Arthur pensa em fazer freelances em bandas de bar para completar sua renda nos f
                          aumentando assim a reputação e o sucesso de seu estabelecimento.
                 .</p>
                 </div>
-                <img className={styles.banner2} src={banner}/>
+                <img className={styles.banner} src={banner}/>
               </div>
             </fieldset>
             
-        </div>          
+        </div>  
+      
     )
+    
 }
+
 export default Conteudo;

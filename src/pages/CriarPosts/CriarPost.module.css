@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #22394D; /* Cor de fundo do formulário */
+
     width: 100%;
     max-width: 500px;
     border-radius: 20px;
@@ -38,13 +38,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 0px;
     color: aliceblue;
     width: 100%;
 }
 
 .campo input, .campo textarea, .campo select {
-    background-color: #1A212A;
+    background-color: #22394D; /* Cor de fundo do formulário */
     color: aliceblue; /* Cor do texto branco */
     border-radius: 5px;
     outline: none;
@@ -78,7 +78,6 @@ textarea {
     outline: none; /* Remova o contorno */
     width: 100%;
     transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-
 }
 
 /* Estilos para o botão hover */

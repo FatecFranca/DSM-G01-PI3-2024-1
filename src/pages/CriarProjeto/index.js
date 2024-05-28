@@ -146,7 +146,7 @@ const CadastroProjeto = () => {
             </div>
           </div>
           <div className={styles.campo}>
-            <label htmlFor="link">LINK:</label>
+            <label htmlFor="link">LINK DA BANDA:</label>
             <input type="text" id="link" name="link" value={projeto.link} onChange={handleChange} required />
           </div>
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
