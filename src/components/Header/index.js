@@ -21,8 +21,8 @@ function Header() {
                 </nav>
             </div>
 
-            <div className={styles.botoes}>
-                <button>
+            <div>
+                <button className={styles.botao}>
                     <Link to="/login">LOGIN</Link>
                 </button>
             </div>

@@ -1,12 +1,19 @@
 body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1A212A; /* Cor de fundo da página inteira */
     overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
 }
+
 
 .cadastroUsuario {
     height: 100vh; /* Garante que o contêiner ocupe toda a altura da janela */
     margin: 0; /* Remove margens */
     padding: 0; /* Remove preenchimento */
-    background-color: #22394D;
     display: flex; /* Usa flexbox para alinhar itens verticalmente */
     flex-direction: column; /* Alinha os itens verticalmente */
     align-items: flex-start;
@@ -14,7 +21,7 @@ body {
     max-width: 500px;
     border-radius: 20px;
     padding: 30px;
-
+    background-color: transparent; /* Cor de fundo do formulário */
 }
 
 
@@ -29,13 +36,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 0px;
     color: aliceblue;
     width: 100%;
 }
 
 .campo input, .campo textarea, .campo select {
-    background-color: #1A212A;
+    background-color: #22394D;
     color: aliceblue; /* Cor do texto branco */
     border-radius: 5px;
     outline: none;
@@ -52,12 +59,7 @@ body {
     font-size: 16px;
 }
 
-.botao {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
 
 .botao {
     margin-top: 30px;

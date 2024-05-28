@@ -11,13 +11,11 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #22394D; /* Cor de fundo do formulário */
+    align-items: flex-start;
     width: 500PX;
     max-width: 500px;
     border-radius: 20px;
     padding: 20px;
-    box-sizing: border-box; /* Inclui o padding dentro da largura */
     margin: 20px;
 }
 
@@ -38,13 +36,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 0px;
     color: aliceblue;
     width: 100%;
 }
 
 .campo input, .campo textarea, .campo select {
-    background-color: #1A212A;
+    background-color: #22394D;
     color: aliceblue; /* Cor do texto branco */
     border-radius: 5px;
     outline: none;
@@ -61,11 +59,6 @@ body {
     font-size: 16px;
 }
 
-textarea {
-    height: 100px;
-    resize: none; /* Impede que o usuário redimensione o textarea */
-}
-
 .botao {
     margin-top: 30px;
     background-color: #CC353C; /* Cor de fundo vermelha */
@@ -78,10 +71,10 @@ textarea {
     outline: none; /* Remova o contorno */
     width: 100%;
     transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-
 }
 
 /* Estilos para o botão hover */
 .botao:hover {
     background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
 }
+

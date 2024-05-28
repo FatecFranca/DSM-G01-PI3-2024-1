@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Modal from 'react-modal';
 import CriarPost from '../../pages/CriarPosts'; // Certifique-se de que o caminho está correto
+import styles from './Posts-pagUsuario.module.css'
 
 Modal.setAppElement('#root'); // Isso é necessário para acessibilidade
 
@@ -64,7 +65,7 @@ const PostsPage = () => {
   return (
     <div>
       <h1>Posts</h1>
-      <button onClick={openModal}>NOVO POST</button>
+      <button className={styles.botao} onClick={openModal}>NOVO POST</button>
       <div>
         {/* Mapear os posts e exibir cada um */}
         {posts.map((post) => (
@@ -80,7 +81,7 @@ const PostsPage = () => {
         style={customStyles}
         contentLabel="Criar Novo Post"
       >
-        <div style={{ background: 'black', padding: '20px', borderRadius: '10px' }}>
+        <div style={{ background: '#BLACK', padding: '20px', borderRadius: '10px' }}>
           <button onClick={closeModal} style={{ float: 'right', background: '#22394D', border: 'none', fontSize: '20px', cursor: 'pointer' }}>✖</button>
           <CriarPost adicionarPost={adicionarPost} closeModal={closeModal} />
         </div>

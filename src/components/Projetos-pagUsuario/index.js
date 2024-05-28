@@ -20,9 +20,12 @@ const customStyles = {
     padding: '20px',
     borderRadius: '10px',
     background: 'transparent', // Definir fundo transparente
-    border: 'none' // Remover borda
+    border: 'none', // Remover borda
+    zIndex: '9999' // Definir um alto z-index
+    
   },
   overlay: {
+    zIndex: '9999', // Definir um alto z-index
     backgroundColor: 'rgba(0, 0, 0, 0.75)' // Fundo escurecido
   }
 };
@@ -59,7 +62,7 @@ const ProjetosPage = () => {
   return (
     <div className={styles.container}>
       <h1>Projetos</h1>
-      <button onClick={openModal}>NOVO PROJETO</button>
+      <button className={styles.botao} onClick={openModal}>NOVO PROJETO</button>
       <div className={styles.projetosList}>
         {projetos.map((projeto) => (
           <div key={projeto.id} className={styles.projetoItem}>
@@ -81,7 +84,7 @@ const ProjetosPage = () => {
         style={customStyles}
         contentLabel="Criar Novo Projeto"
       >
-        <div style={{ background: 'black', padding: '20px', borderRadius: '10px' }}>
+        <div style={{ background: '#BLACK', padding: '20px', borderRadius: '10px' }}>
           <button onClick={closeModal} style={{ float: 'right', background: '#22394D', border: 'none', fontSize: '20px', cursor: 'pointer' }}>✖</button>
           <CadastroProjeto adicionarProjeto={adicionarProjeto} closeModal={closeModal} />
         </div>

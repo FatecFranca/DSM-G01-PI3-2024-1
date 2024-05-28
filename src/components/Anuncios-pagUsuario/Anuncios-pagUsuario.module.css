@@ -39,4 +39,24 @@
     border: none;
     border-top: 1px solid #eee;
   }
+
+  .botao {
+    margin-top: 30px;
+    background-color: #CC353C; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    border: none; /* Remova a borda */
+    border-radius: 5px; /* Adicione bordas arredondadas */
+    padding: 10px 20px; /* Adicione preenchimento interno */
+    cursor: pointer; /* Altere o cursor ao passar */
+    text-align: center; /* Alinhe o texto ao centro */
+    outline: none; /* Remova o contorno */
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+
+}
+
+/* Estilos para o botão hover */
+.botao:hover {
+    background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
+}
   

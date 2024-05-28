@@ -59,7 +59,7 @@ const AnunciosPage = () => {
   return (
     <div className={styles.container}>
       <h1>Anúncios</h1>
-      <button onClick={openModal}>NOVO ANÚNCIO</button>
+      <button className={styles.botao} onClick={openModal}>NOVO ANÚNCIO</button>
       <div className={styles.anunciosList}>
         {anuncios.map((anuncio) => (
           <div key={anuncio._id} className={styles.anuncioItem}>
@@ -76,13 +76,15 @@ const AnunciosPage = () => {
         style={customStyles}
         contentLabel="Criar Novo Anúncio"
       >
-        <div style={{ background: 'black', borderRadius: '10px' }}>
+        <div style={{ background: '#BLACK', borderRadius: '10px' }}>
           <button onClick={closeModal} style={{ float: 'right', background: '#22394D', border: 'none', fontSize: '20px', cursor: 'pointer' }}>✖</button>
           <CriarAnuncio adicionarAnuncio={adicionarAnuncio} closeModal={closeModal} />
         </div>
       </Modal>
     </div>
   );
+
+
 };
 
 export default AnunciosPage;

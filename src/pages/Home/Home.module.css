@@ -2,8 +2,12 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #1A212A;
+    margin: 0px;
+    padding: 0px;
 }
 
 fieldset {
     border: none; /* Remover a borda */
+    margin: 0px;
+    padding: 0px;
 }

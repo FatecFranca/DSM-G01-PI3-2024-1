@@ -8,14 +8,12 @@ Modal.setAppElement('#root'); // Isso é necessário para acessibilidade
 
 const customStyles = {
   content: {
-    top: '50%',
+    top: '65%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
     transform: 'translate(-50%, -50%)',
-    width: '50%', // Ajuste o tamanho conforme necessári
-    padding: '20px',
-    borderRadius: '10px',
+    borderRadius: '15px',
     background: 'transparent', // Definir fundo transparente
     border: 'none' // Remover borda
   },
@@ -58,7 +56,7 @@ function Login() {
                     style={customStyles}
                     contentLabel="Cadastro de Usuário"
                 >
-                    <div style={{ background: 'black', padding: '20px', borderRadius: '10px' }}>
+                    <div style={{ background: '#black', padding: '10px', borderRadius: '10px' }}>
                         <button onClick={closeModal} style={{ float: 'right', background: '#22394D', border: 'none', fontSize: '20px', cursor: 'pointer' }}>✖</button>
                         <CadastroUsuario />
                     </div>
