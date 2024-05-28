@@ -15,7 +15,7 @@ por critérios específicos e entrem em contato diretamente uns com os outros, f
  bandas e colaborações musicais.</p>
               </div>
              
-              <div className={styles.traco}></div>
+
 
             <fieldset>
                 <div className={styles.container1}>

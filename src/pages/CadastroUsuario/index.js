@@ -94,7 +94,7 @@ const CadastroUsuario = () => {
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
           <div className={styles.campo}>
-            <h2>           - DADOS PESSOAIS -</h2>
+            <h2>- DADOS PESSOAIS -</h2>
             <label htmlFor="nome">NOME:</label>
             <input type="text" id="nome" name="nome" value={usuario.nome} onChange={handleChange} required />
           </div>
@@ -123,7 +123,6 @@ const CadastroUsuario = () => {
             <label htmlFor="foto_user">FOTO DE PERFIL:</label>
             <input type="file" id="foto_user" name="foto_user" onChange={handleFileChange} required />
           </div>
-          <br />
           <hr />
           <h2>- INFOS MUSICAIS -</h2>
           <div className={styles.campo}>
@@ -166,7 +165,6 @@ const CadastroUsuario = () => {
               ))}
             </div>
           </div>
-          <br />
           <hr />
           <h2>- CONTATOS -</h2>
           <div className={styles.campo}>

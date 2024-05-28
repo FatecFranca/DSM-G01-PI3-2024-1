@@ -1,9 +1,14 @@
+body{
+    margin-top: 100px;
+    padding: 10px
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #22394D; /* Cor de fundo do formulário */
-    width: 100%;
+    width: 500px;
     max-width: 500px;
     border-radius: 20px;
     padding: 20px;
@@ -69,4 +74,9 @@
 /* Estilos para o botão hover */
 .botao:hover {
     background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado */
 }

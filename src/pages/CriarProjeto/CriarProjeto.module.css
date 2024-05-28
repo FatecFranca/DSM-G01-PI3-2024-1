@@ -1,6 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
+.cadastroProjeto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,15 +13,18 @@ body {
     background-color: #22394D; /* Cor de fundo do formulário */
     width: 500px;
     border-radius: 20px;
+    padding: 30px; /* Adiciona espaçamento interno */
 }
+
 .campo {
     display: flex;
     flex-direction: column;
-    align-items: right;
-    margin-top: 30px;
+    align-items: left; /* Alinha os campos à esquerda */
+    margin-top: 20px; /* Reduz o espaço superior */
     color: aliceblue;
-    width: 300px;
+    width: 100%; /* Define a largura para ocupar todo o espaço disponível */
 }
+
 .campo input, .campo textarea, .campo select {
     background-color: #1A212A;
     color: aliceblue; /* Cor do texto branco */
@@ -32,11 +33,14 @@ body {
     border: none; 
     height: 40px;  
     padding: 10px; /* Adiciona preenchimento interno */
+    width: 100%; /* Define a largura para ocupar todo o espaço disponível */
 }
+
 .campo label {
     color: aliceblue;
     padding: 10px;
     font-size: 20px;
+    width: 100%; /* Define a largura para ocupar todo o espaço disponível */
 }
 
 .botao {
@@ -51,7 +55,6 @@ body {
     outline: none; /* Remova o contorno */
     width: 100%;
     transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-
 }
 
 /* Estilos para o botão hover */
@@ -59,13 +62,8 @@ body {
     background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
 }
 
-body h2 {
-    color: rgb(255, 243, 135);
-    text-align: center;
-}
-
 .bioTextArea {
-    width: 300px;
+    width: 100%; /* Define a largura para ocupar todo o espaço disponível */
     height: 400px;
     resize: none;  /* Impede que o usuário redimensione o textarea */
 }
@@ -75,11 +73,21 @@ body h2 {
     display: flex;
     flex-wrap: wrap; /* Permite quebrar linha */
     justify-content: space-between; /* Espaça os itens igualmente */
+    width: 100%; /* Define a largura para ocupar todo o espaço disponível */
 }
+
 .checkboxItem {
-    width: 45%; /* Largura de cada coluna */
+    width: 50%; /* Largura de cada coluna */
     color: aliceblue; /* Cor do texto dos labels dos checkboxes */
 }
+
 .checkboxItem input {
+    size: 0cap;
+    margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
+}
+
+.checkboxItem input {
+    width: 20px; /* Reduz a largura do checkbox */
+    height: 20px; /* Define a altura do checkbox */
     margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
 }
