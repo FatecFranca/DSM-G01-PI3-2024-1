@@ -84,7 +84,7 @@ body {
 
 .traco {
     width: 100%; /* Largura do traço */
-    height: 1px; /* Altura do traço */
+    height: 0px; /* Altura do traço */
     background-color: white; /* Cor do traço */
     margin-bottom: 50px; /* Reduzir a margem inferior para telas menores */
 }

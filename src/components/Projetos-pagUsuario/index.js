@@ -1,12 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Modal from 'react-modal';
+import CadastroProjeto from '../../pages/CriarProjeto'; // Certifique-se de que o caminho está correto
 import styles from './Projetos-pagUsuario.module.css';
 
-const ProjetosPage = () => {
-  // Estado para armazenar os projetos
-  const [projetos, setProjetos] = useState([]);
+Modal.setAppElement('#root'); // Isso é necessário para acessibilidade
 
-  // Função para carregar os projetos
+const customStyles = {
+  content: {
+    top: '60%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: '50%', // Ajuste o tamanho conforme necessário
+    maxHeight: '80vh', // Limitar a altura do modal
+    overflowY: 'auto', // Adicionar barra de rolagem vertical
+    padding: '20px',
+    borderRadius: '10px',
+    background: 'transparent', // Definir fundo transparente
+    border: 'none' // Remover borda
+  },
+  overlay: {
+    backgroundColor: 'rgba(0, 0, 0, 0.75)' // Fundo escurecido
+  }
+};
+
+const ProjetosPage = () => {
+  const [projetos, setProjetos] = useState([]);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const carregarProjetos = async () => {
     try {
       const response = await axios.get('http://localhost:3000/projetos');
@@ -16,19 +40,29 @@ const ProjetosPage = () => {
     }
   };
 
-  // Carregar os projetos ao montar o componente
   useEffect(() => {
     carregarProjetos();
   }, []);
 
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const adicionarProjeto = (novoProjeto) => {
+    setProjetos([...projetos, novoProjeto]);
+  };
+
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Projetos</h1>
-      <p>Nesta página voce pode ver todos os seus projetos</p>
-      <div>
-        {/* Mapear os projetos e exibir cada um */}
+      <button onClick={openModal}>NOVO PROJETO</button>
+      <div className={styles.projetosList}>
         {projetos.map((projeto) => (
-          <div key={projeto.id}>
+          <div key={projeto.id} className={styles.projetoItem}>
             <h3>{projeto.descricao}</h3>
             <p>Data: {projeto.data}</p>
             <p>Objetivo: {projeto.objetivo.join(', ')}</p>
@@ -41,6 +75,17 @@ const ProjetosPage = () => {
           </div>
         ))}
       </div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Criar Novo Projeto"
+      >
+        <div style={{ background: 'black', padding: '20px', borderRadius: '10px' }}>
+          <button onClick={closeModal} style={{ float: 'right', background: '#22394D', border: 'none', fontSize: '20px', cursor: 'pointer' }}>✖</button>
+          <CadastroProjeto adicionarProjeto={adicionarProjeto} closeModal={closeModal} />
+        </div>
+      </Modal>
     </div>
   );
 };

@@ -7,23 +7,23 @@ import logo from '../../assets/logo_bandfinder.png';
 function Header() {
     return (
         <header className={styles.header}>
-            <img src={logo} alt="Logo Bandfinder" className={styles.logo} />
+            <Link to="/">
+                <img src={logo} alt="Logo Bandfinder" className={styles.logo} />
+            </Link>
+
 
             <div className={styles.links}>
                 <nav>
-                    <Link to="/timeline">Time Line</Link>
-                    <Link to="/usuarios">Usuários</Link>
-                    <Link to="/projetos">Projetos</Link>
-                    <Link to="/anuncios">Anúncios</Link>
+                    <Link to="/timeline">TIMELINE</Link>
+                    <Link to="/usuarios">USUÁRIOS</Link>
+                    <Link to="/projetos">PROJETOS</Link>
+                    <Link to="/anuncios">ANÚNCIOS</Link>
                 </nav>
             </div>
 
             <div className={styles.botoes}>
                 <button>
-                    <Link to="/login">Login</Link>
-                </button>
-                <button>
-                    <Link to="/cadastro">Cadastre-se</Link>
+                    <Link to="/login">LOGIN</Link>
                 </button>
             </div>
         </header>

@@ -2,13 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px; /* Reduzi o padding para melhor responsividade */
+    padding: 15px; /* Reduzi o padding para melhor responsividade */
     background-color: #22394D;
     position: fixed; /* Torna o cabeçalho fixo */
     top: 0;
     left: 0;
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
     box-sizing: border-box; /* Inclui padding e border no tamanho total */
 }
 
@@ -17,6 +16,7 @@
     color: white;
     text-decoration: none;
 }
+
 
 .botoes button a {
     color: white;
