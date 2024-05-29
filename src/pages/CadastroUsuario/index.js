@@ -19,6 +19,7 @@ const habilidadesOptions = [
 
 const CadastroUsuario = () => {
   const [usuario, setUsuario] = useState({
+    _id: '',
     nome: '',
     cpf: '',
     data_nascimento: '',
@@ -87,6 +88,7 @@ const CadastroUsuario = () => {
       console.log('Dados do usuário enviados com sucesso:', response.data);
       setErrorMessage('');
       setUsuario({
+        _id: '',
         nome: '',
         cpf: '',
         data_nascimento: '',
