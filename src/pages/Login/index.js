@@ -15,7 +15,9 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     borderRadius: '15px',
     background: 'transparent', // Definir fundo transparente
-    border: 'none' // Remover borda
+    border: 'none', // Remover borda
+    maxHeight: '80vh', // Definir altura máxima
+    overflowY: 'auto' // Adicionar barra de rolagem vertical quando necessário
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.75)' // Fundo escurecido
