@@ -1,17 +1,15 @@
-main {
-    margin-top: 150px; /* Ajuste este valor conforme a altura do cabeçalho */
-}
-
 .header {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px; /* Reduzi o padding para melhor responsividade */
+    padding: 20px; /* Reduzi o padding para melhor responsividade */
     background-color: #22394D;
     position: fixed; /* Torna o cabeçalho fixo */
     top: 0;
     left: 0;
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
 }
 
 .links nav a {
@@ -20,25 +18,26 @@ main {
     text-decoration: none;
 }
 
-
-.botao {
-    background-color: #CC353C; /* Cor de fundo vermelha */
-    color: white; /* Cor do texto */
-    border: none; /* Remova a borda */
-    border-radius: 5px; /* Adicione bordas arredondadas */
-    padding: 10px 20px; /* Adicione preenchimento interno */
-    cursor: pointer; /* Altere o cursor ao passar */
-    text-align: center; /* Alinhe o texto ao centro */
-    outline: none; /* Remova o contorno */
-    width: 100%;
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+.botoes button a {
+    color: white;
+    text-decoration: none;
 }
 
-/* Estilos para o botão hover */
-.botao:hover {
-    background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
+.botoes button {
+    background-color: #CC353C;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+}
 
 .logo {
     width: 150px; /* Ajuste a largura para melhor responsividade */

@@ -11,6 +11,9 @@ function HeaderUser(){
         
 
             <div className={styles.botoes}>
+                <button >
+                    <a Link to="/login">Time-Line</a>
+                </button>
                 <button>
                     <a Link to="/Home">Sair</a>
                 </button>

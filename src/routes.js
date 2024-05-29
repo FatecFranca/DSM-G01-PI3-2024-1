@@ -11,6 +11,7 @@ import CriarPost from './pages/CriarPosts';
 import CriarProjeto from './pages/CriarProjeto';
 
 import PaginaUsuario from './pages/PaginaUsusario';
+import ProjetosPage from './pages/PaginaProjetos/index.js';
 import Home from './pages/Home';
 import Login from './pages/Login';
 

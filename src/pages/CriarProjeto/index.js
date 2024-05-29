@@ -70,7 +70,7 @@ const CadastroProjeto = () => {
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
           <div className={styles.campo}>
-            <h2>PROJETO</h2>
+            <h2>- DADOS DO PROJETO -</h2>
             <label htmlFor="titulo">TÍTULO:</label>
             <input type="text" id="titulo" name="titulo" value={projeto.titulo} onChange={handleChange} required />
           </div>
@@ -146,14 +146,13 @@ const CadastroProjeto = () => {
             </div>
           </div>
           <div className={styles.campo}>
-            <label htmlFor="link">LINK DA BANDA:</label>
+            <label htmlFor="link">LINK:</label>
             <input type="text" id="link" name="link" value={projeto.link} onChange={handleChange} required />
           </div>
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-          <button className={styles.botao} type="submit">ENVIAR</button>
-          <br></br>
-          <br></br>
-          <br></br>
+          <div className={styles.botao}>
+            <button type="submit">Salvar</button>
+          </div>
         </form>
       </div>
     </div>

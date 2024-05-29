@@ -1,39 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Modal from 'react-modal';
-import CadastroProjeto from '../../pages/CriarProjeto'; // Certifique-se de que o caminho está correto
 import styles from './Projetos-pagUsuario.module.css';
 
-Modal.setAppElement('#root'); // Isso é necessário para acessibilidade
-
-const customStyles = {
-  content: {
-    top: '60%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    width: '50%', // Ajuste o tamanho conforme necessário
-    maxHeight: '80vh', // Limitar a altura do modal
-    overflowY: 'auto', // Adicionar barra de rolagem vertical
-    padding: '20px',
-    borderRadius: '10px',
-    background: 'transparent', // Definir fundo transparente
-    border: 'none', // Remover borda
-    zIndex: '9999' // Definir um alto z-index
-    
-  },
-  overlay: {
-    zIndex: '9999', // Definir um alto z-index
-    backgroundColor: 'rgba(0, 0, 0, 0.75)' // Fundo escurecido
-  }
-};
-
 const ProjetosPage = () => {
+  // Estado para armazenar os projetos
   const [projetos, setProjetos] = useState([]);
-  const [modalIsOpen, setModalIsOpen] = useState(false);
 
+  // Função para carregar os projetos
   const carregarProjetos = async () => {
     try {
       const response = await axios.get('http://localhost:3000/projetos');
@@ -43,29 +16,19 @@ const ProjetosPage = () => {
     }
   };
 
+  // Carregar os projetos ao montar o componente
   useEffect(() => {
     carregarProjetos();
   }, []);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
-
-  const adicionarProjeto = (novoProjeto) => {
-    setProjetos([...projetos, novoProjeto]);
-  };
-
   return (
-    <div className={styles.container}>
+    <div>
       <h1>Projetos</h1>
-      <button className={styles.botao} onClick={openModal}>NOVO PROJETO</button>
-      <div className={styles.projetosList}>
+      <p>Nesta página voce pode ver todos os seus projetos</p>
+      <div>
+        {/* Mapear os projetos e exibir cada um */}
         {projetos.map((projeto) => (
-          <div key={projeto.id} className={styles.projetoItem}>
+          <div key={projeto.id}>
             <h3>{projeto.descricao}</h3>
             <p>Data: {projeto.data}</p>
             <p>Objetivo: {projeto.objetivo.join(', ')}</p>
@@ -78,17 +41,6 @@ const ProjetosPage = () => {
           </div>
         ))}
       </div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Criar Novo Projeto"
-      >
-        <div style={{ background: '#BLACK', padding: '20px', borderRadius: '10px' }}>
-          <button onClick={closeModal} style={{ float: 'right', background: '#22394D', border: 'none', fontSize: '20px', cursor: 'pointer' }}>✖</button>
-          <CadastroProjeto adicionarProjeto={adicionarProjeto} closeModal={closeModal} />
-        </div>
-      </Modal>
     </div>
   );
 };
