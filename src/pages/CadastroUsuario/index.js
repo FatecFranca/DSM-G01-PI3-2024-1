@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import styles from './Cadastro-usuario.module.css';
 
 const estadosBrasil = [
@@ -61,61 +62,75 @@ const CadastroUsuario = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (usuario.senha !== usuario.confirmSenha) {
       setErrorMessage('Senhas não conferem');
       return;
     }
-    console.log('Dados do usuário:', usuario);
-    setErrorMessage('');
-    setUsuario({
-      nome: '',
-      cpf: '',
-      data_nascimento: '',
-      municipio: '',
-      uf: '',
-      foto_user: '',
-      bio: '',
-      influencias: [],
-      habilidades: [],
-      telefone: '',
-      instagram: '',
-      facebook: '',
-      youtube: '',
-      email: '',
-      senha: '',
-      confirmSenha: ''
+
+    const formData = new FormData();
+    Object.keys(usuario).forEach(key => {
+      if (key === 'influencias' || key === 'habilidades') {
+        usuario[key].forEach(item => formData.append(key, item));
+      } else {
+        formData.append(key, usuario[key]);
+      }
     });
+
+    try {
+      const response = await axios.post('/api/usuarios', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+      console.log('Dados do usuário enviados com sucesso:', response.data);
+      setErrorMessage('');
+      setUsuario({
+        nome: '',
+        cpf: '',
+        data_nascimento: '',
+        municipio: '',
+        uf: '',
+        foto_user: '',
+        bio: '',
+        influencias: [],
+        habilidades: [],
+        telefone: '',
+        instagram: '',
+        facebook: '',
+        youtube: '',
+        email: '',
+        senha: '',
+        confirmSenha: ''
+      });
+    } catch (error) {
+      console.error('Erro ao enviar dados do usuário:', error);
+      setErrorMessage('Erro ao enviar dados do usuário');
+    }
   };
 
   return (
     <div className={styles.cadastroUsuario}>
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
-
-
-            <h2>- DADOS PESSOAIS -</h2>
-            <div className={styles.campo}>
+          <h2>- DADOS PESSOAIS -</h2>
+          <div className={styles.campo}>
             <label htmlFor="nome">NOME:</label>
             <input type="text" id="nome" name="nome" value={usuario.nome} onChange={handleChange} required />
           </div>
-
           <div className={styles.campo}>
             <label htmlFor="cpf">CPF:</label>
             <input type="text" id="cpf" name="cpf" value={usuario.cpf} onChange={handleChange} required />
           </div>
-
           <div className={styles.campo}>
             <label htmlFor="data_nascimento">DATA DE NASCIMENTO:</label>
             <input type="date" id="data_nascimento" name="data_nascimento" value={usuario.data_nascimento} onChange={handleChange} required />
           </div>
-
           <div className={styles.campo}>
             <label htmlFor="municipio">MUNICÍPIO:</label>
             <input type="text" id="municipio" name="municipio" value={usuario.municipio} onChange={handleChange} required />
           </div>
-
           <div className={styles.campo}>
             <label htmlFor="uf">ESTADO:</label>
             <select id="uf" name="uf" value={usuario.uf} onChange={handleChange} required>
@@ -125,20 +140,15 @@ const CadastroUsuario = () => {
               ))}
             </select>
           </div>
-
           <div className={styles.campo}>
             <label htmlFor="foto_user">FOTO DE PERFIL:</label>
             <input type="file" id="foto_user" name="foto_user" onChange={handleFileChange} required />
           </div>
-
-
           <h2>- INFOS MUSICAIS -</h2>
-
           <div className={styles.campo}>
             <label htmlFor="bio">BIO:</label>
             <textarea id="bio" name="bio" value={usuario.bio} onChange={handleChange} required className={styles.bioTextArea} />
           </div>
-
           <div className={styles.campo}>
             <label>INFLUÊNCIAS:</label>
             <div className={styles.checkboxContainer}>
@@ -157,7 +167,6 @@ const CadastroUsuario = () => {
               ))}
             </div>
           </div>
-
           <div className={styles.campo}>
             <label>HABILIDADES:</label>
             <div className={styles.checkboxContainer}>
@@ -177,9 +186,7 @@ const CadastroUsuario = () => {
             </div>
           </div>
 
-
           <h2>- CONTATOS -</h2>
-
           <div className={styles.campo}>
             <label htmlFor="telefone">TELEFONE:</label>
             <input type="text" id="telefone" name="telefone" value={usuario.telefone} onChange={handleChange} required />
@@ -200,7 +207,6 @@ const CadastroUsuario = () => {
             <input type="text" id="youtube" name="youtube" value={usuario.youtube} onChange={handleChange} required />
           </div>
 
-
           <h2>- CADASTRO -</h2>
 
           <div className={styles.campo}>
@@ -219,7 +225,12 @@ const CadastroUsuario = () => {
           </div>
           
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
+
           <button className={styles.botao} type="submit">ENVIAR</button>
+
+<br />
+<br />
+<br />
 
         </form>
       </div>
