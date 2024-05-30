@@ -3,6 +3,7 @@ import AnunciosCard from '../../components/AnunciosCard';
 import styles from './Anuncios.module.css';
 import Header from '../../components/Header';
 
+
 const AnunciosPage = () => {
   const [posts, setPosts] = useState([]);
 

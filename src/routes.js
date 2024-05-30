@@ -23,8 +23,11 @@ function AppRoutes (){
         <Routes>
         <Route path="/data" element={DataFetcher} /> 
         
+
+
                             {/* login */}
             <Route path="/login" element={<Login/>} />
+
 
                            {/* perfil */}
             <Route path="/users" element={<PaginaUsuario/>} />

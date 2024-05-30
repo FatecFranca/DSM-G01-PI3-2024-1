@@ -8,31 +8,450 @@
   "uf": "SP",
   "telefone": "123456789",
   "email": "allison@example.com",
-  "habilidade": [
-    "guitarra",
-    "vocal"
+  "habilidades": [
+    "baixo",
+    "guitarra"
   ],
-  "bio": "Estou aqui para formar uma banda",
-  "influencia": [
+  "bio": "Estou aqui para formar uma banda de hardcore/punkrock",
+  "influencias": [
     "rock",
-    "metal"
+    "reggae"
   ],
-  "foto_user": "user.jpg",
+  "foto_user": "allison_.jpg",
   "instagram": "@allisonrps",
   "youtube": "allisonxide",
   "facebook": "allison_rps",
   "senha": "password123"
 }
 
+///////////////////
+
+{
+  "nome": "Mariana Ferreira",
+  "cpf": "321.654.987-10",
+  "data_nascimento": "1992-02-25T00:00:00Z",
+  "municipio": "Ribeirão Preto",
+  "uf": "SP",
+  "telefone": "987654321",
+  "email": "mariana@example.com",
+  "habilidades": [
+    "piano",
+    "vocal"
+  ],
+  "bio": "Cantora e pianista buscando novas oportunidades",
+  "influencias": [
+    "pop",
+    "jazz"
+  ],
+  "foto_user": "mariana.jpg",
+  "instagram": "@mariana.music",
+  "youtube": "marianamusic",
+  "facebook": "mariana.music",
+  "senha": "senha321"
+}
+
+{
+  "nome": "Carlos Souza",
+  "cpf": "789.456.123-00",
+  "data_nascimento": "1985-09-10T00:00:00Z",
+  "municipio": "Campinas",
+  "uf": "SP",
+  "telefone": "123123123",
+  "email": "carlos@example.com",
+  "habilidades": [
+    "bateria"
+  ],
+  "bio": "Baterista com experiência em várias bandas de rock",
+  "influencias": [
+    "rock",
+    "reggae"
+  ],
+  "foto_user": "carlos.jpg",
+  "instagram": "@carlosdrums",
+  "youtube": "carlosdrummer",
+  "facebook": "carlos.souza",
+  "senha": "password456"
+}
+
+
+{
+  "nome": "Larissa Mendes",
+  "cpf": "123.987.654-11",
+  "data_nascimento": "1990-12-05T00:00:00Z",
+  "municipio": "São Paulo",
+  "uf": "SP",
+  "telefone": "321321321",
+  "email": "larissa@example.com",
+  "habilidades": [
+    "violino"
+  ],
+  "bio": "Violinista clássica à procura de novos projetos",
+  "influencias": [
+    "folk"
+  ],
+  "foto_user": "larissa.jpg",
+  "instagram": "@larissaviolin",
+  "youtube": "larissaviolinist",
+  "facebook": "larissa.mendes",
+  "senha": "larissa123"
+}
+
+{
+  "nome": "Felipe Santos",
+  "cpf": "321.123.456-22",
+  "data_nascimento": "1995-03-15T00:00:00Z",
+  "municipio": "Belo Horizonte",
+  "uf": "MG",
+  "telefone": "654654654",
+  "email": "felipe@example.com",
+  "habilidades": [
+    "teclado",
+    "backvocal"
+  ],
+  "bio": "Tecladista e vocalista, pronto para novos desafios",
+  "influencias": [
+    "pop",
+    "soul"
+  ],
+  "foto_user": "felipe.jpg",
+  "instagram": "@felipemusic",
+  "youtube": "felipesantos",
+  "facebook": "felipe.santos",
+  "senha": "felipe321"
+}
+
+{
+  "nome": "Ana Clara Martins",
+  "cpf": "654.321.987-33",
+  "data_nascimento": "1987-07-20T00:00:00Z",
+  "municipio": "Curitiba",
+  "uf": "PR",
+  "telefone": "789789789",
+  "email": "ana@example.com",
+  "habilidades": [
+    "saxofone"
+  ],
+  "bio": "Saxofonista de jazz e música brasileira",
+  "influencias": [
+    "jazz",
+    "mpb"
+  ],
+  "foto_user": "ana.jpg",
+  "instagram": "@anasax",
+  "youtube": "anasaxplayer",
+  "facebook": "ana.clara",
+  "senha": "ana123"
+}
+
+{
+  "nome": "João Silva",
+  "cpf": "456.789.123-44",
+  "data_nascimento": "1991-11-23T00:00:00Z",
+  "municipio": "Porto Alegre",
+  "uf": "RS",
+  "telefone": "987123987",
+  "email": "joao@example.com",
+  "habilidades": [
+    "guitarra",
+    "vocal"
+  ],
+  "bio": "Guitarrista e vocalista de banda de blues",
+  "influencias": [
+    "blues",
+    "rock"
+  ],
+  "foto_user": "joao.jpg",
+  "instagram": "@joaoblues",
+  "youtube": "joaosilvablues",
+  "facebook": "joao.silva",
+  "senha": "joao456"
+}
+
+{
+  "nome": "Bruna Alves",
+  "cpf": "789.123.456-55",
+  "data_nascimento": "1993-05-30T00:00:00Z",
+  "municipio": "Salvador",
+  "uf": "BA",
+  "telefone": "654321654",
+  "email": "bruna@example.com",
+  "habilidades": [
+    "baixo"
+  ],
+  "bio": "Baixista em busca de novas colaborações",
+  "influencias": [
+    "funk",
+    "soul"
+  ],
+  "foto_user": "bruna.jpg",
+  "instagram": "@brunabass",
+  "youtube": "brunabassist",
+  "facebook": "bruna.alves",
+  "senha": "bruna789"
+}
+
+
+{
+  "nome": "Ricardo Lima",
+  "cpf": "321.789.456-66",
+  "data_nascimento": "1982-08-18T00:00:00Z",
+  "municipio": "Brasília",
+  "uf": "DF",
+  "telefone": "123654789",
+  "email": "ricardo@example.com",
+  "habilidades": [
+    "violão"
+  ],
+  "bio": "Violonista com foco em música brasileira",
+  "influencias": [
+    "MPB"
+  ],
+  "foto_user": "ricardo.jpg",
+  "instagram": "@ricardoviolao",
+  "youtube": "ricardolima",
+  "facebook": "ricardo.lima",
+  "senha": "ricardo123"
+}
+
+{
+  "nome": "Camila Rocha",
+  "cpf": "456.123.789-77",
+  "data_nascimento": "1994-10-12T00:00:00Z",
+  "municipio": "Fortaleza",
+  "uf": "CE",
+  "telefone": "987321654",
+  "email": "camila@example.com",
+  "habilidades": [
+    "vocal"
+  ],
+  "bio": "Cantora com experiência em bandas de pop rock",
+  "influencias": [
+    "pop",
+    "rock"
+  ],
+  "foto_user": "camila.jpg",
+  "instagram": "@camilarock",
+  "youtube": "camilarocha",
+  "facebook": "camila.rocha",
+  "senha": "camila456"
+}
+
+{
+  "nome": "Gabriel Oliveira",
+  "cpf": "789.456.321-88",
+  "data_nascimento": "1986-01-05T00:00:00Z",
+  "municipio": "Manaus",
+  "uf": "AM",
+  "telefone": "321987654",
+  "email": "gabriel@example.com",
+  "habilidades": [
+    "teclado",
+    "vocal"
+  ],
+  "bio": "Tecladista e cantor com foco em música gospel",
+  "influencias": [
+    "gospel",
+    "soul"
+  ],
+  "foto_user": "gabriel.jpg",
+  "instagram": "@gabrielgospel",
+  "youtube": "gabrieloliveira",
+  "facebook": "gabriel.oliveira",
+  "senha": "gabriel789"
+}
+
+
+
+
 
 ////////////////////////////////////////// posts
+
+
 
 {
   "usuario_id": "662c2ce9e363e968531bb19d",
   "data": "2023-06-17T00:00:00Z",
   "descricao": "Foto de um show no Roots",
-  "midia": "foto.png"
+  "midia": "roots1.png"
 }
+
+
+{
+  "usuario_id": "6657b344a1d206f4a711f697",
+  "data": "2024-04-25T00:00:00Z",
+  "descricao": "Ensaiando com o quarteto de cordas",
+  "midia": "quarteto_ensaio.jpg"
+}
+
+
+{
+  "usuario_id": "6657b375a1d206f4a711f699",
+  "data": "2024-05-15T00:00:00Z",
+  "descricao": "Novo single disponível nas plataformas digitais!",
+  "midia": "banda_single.jpg"
+}
+
+
+{
+  "usuario_id": "6657b383a1d206f4a711f69b",
+  "data": "2024-06-01T00:00:00Z",
+  "descricao": "Apresentação na Sala São Paulo",
+  "midia": "orquestra_sala.jpg"
+}
+
+
+{
+  "usuario_id": "6657b391a1d206f4a711f69d",
+  "data": "2024-06-20T00:00:00Z",
+  "descricao": "Show incrível em Belo Horizonte!",
+  "midia": "poprock_show.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3a4a1d206f4a711f69f",
+  "data": "2024-07-10T00:00:00Z",
+  "descricao": "Ensaio para o próximo evento corporativo",
+  "midia": "jazz_ensaio.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3b6a1d206f4a711f6a1",
+  "data": "2024-08-05T00:00:00Z",
+  "descricao": "Gravação do nosso novo álbum de blues!",
+  "midia": "blues_gravacao.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3c6a1d206f4a711f6a3",
+  "data": "2024-08-25T00:00:00Z",
+  "descricao": "Primeira apresentação do Projeto Acústico",
+  "midia": "acustico_apresentacao.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3d2a1d206f4a711f6a5",
+  "data": "2024-09-15T00:00:00Z",
+  "descricao": "Nova música de rock progressivo disponível",
+  "midia": "rockprogressivo_musica.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3dca1d206f4a711f6a7",
+  "data": "2024-10-05T00:00:00Z",
+  "descricao": "Ensaio do nosso dueto pop",
+  "midia": "duetopop_ensaio.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3eaa1d206f4a711f6a9",
+  "data": "2024-11-10T00:00:00Z",
+  "descricao": "Preparação para o próximo evento gospel",
+  "midia": "gospel_preparacao.jpg"
+}
+
+
+{
+  "usuario_id": "662c2ce9e363e968531bb19d",
+  "data": "2024-04-20T00:00:00Z",
+  "descricao": "Nosso primeiro ensaio de reggae",
+  "midia": "reggae_ensaio.jpg"
+}
+
+
+{
+  "usuario_id": "6657b344a1d206f4a711f697",
+  "data": "2024-06-15T00:00:00Z",
+  "descricao": "Concerto ao ar livre",
+  "midia": "quarteto_concerto.jpg"
+}
+
+
+{
+  "usuario_id": "6657b375a1d206f4a711f699",
+  "data": "2024-07-20T00:00:00Z",
+  "descricao": "Ensaio da banda indie",
+  "midia": "banda_ensaio.jpg"
+}
+
+
+{
+  "usuario_id": "6657b383a1d206f4a711f69b",
+  "data": "2024-08-10T00:00:00Z",
+  "descricao": "Participação no festival de música",
+  "midia": "orquestra_festival.jpg"
+}
+
+
+{
+  "usuario_id": "6657b391a1d206f4a711f69d",
+  "data": "2024-09-10T00:00:00Z",
+  "descricao": "Gravação do clipe em Belo Horizonte",
+  "midia": "poprock_clipe.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3a4a1d206f4a711f69f",
+  "data": "2024-10-20T00:00:00Z",
+  "descricao": "Performance no evento de jazz",
+  "midia": "jazz_evento.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3b6a1d206f4a711f6a1",
+  "data": "2024-11-25T00:00:00Z",
+  "descricao": "Blues na noite de Porto Alegre",
+  "midia": "blues_noite.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3c6a1d206f4a711f6a3",
+  "data": "2024-12-10T00:00:00Z",
+  "descricao": "Participação em evento acústico",
+  "midia": "acustico_evento.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3d2a1d206f4a711f6a5",
+  "data": "2025-01-25T00:00:00Z",
+  "descricao": "Nova composição de rock progressivo",
+  "midia": "rockprogressivo_composicao.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3dca1d206f4a711f6a7",
+  "data": "2025-02-05T00:00:00Z",
+  "descricao": "Preparação para o show pop",
+  "midia": "duetopop_show.jpg"
+}
+
+
+{
+  "usuario_id": "6657b3eaa1d206f4a711f6a9",
+  "data": "2025-03-15T00:00:00Z",
+  "descricao": "Ensaio do coro gospel",
+  "midia": "gospel_ensaio.jpg"
+}
+
+
+{
+  "usuario_id": "662c2ce9e363e968531bb19d",
+  "data": "2025-04-20T00:00:00Z",
+  "descricao": "Show de reggae ao vivo",
+  "midia": "reggae_show.jpg"
+}
+
+
 
 ////////////////////////////////////////// projetos
 
@@ -42,21 +461,18 @@
   "descricao": "Banda com 5 anos de estrada, com interesse em gravar novo album autoral",
   "data": "2024-03-17T00:00:00Z",
   "objetivo":  [
-    "autoral",
-    "cover",
-    "hobbie"
+    "autoral"
   ],
   "municipio": "Franca",
   "uf": "SP",
   "estilo": [
-    "rock",
-    "metal"
+    "rock"
   ],
   "procura":  [
     "vocal",
     "bateria"
   ],
-  "link": "instagram.com/banda"
+  "link": "instagram.com/rockers"
 }
 
 
@@ -72,3 +488,363 @@
   "preco": "599.99",
   "midia": "foto_guitasquier.jpg"
 }
+
+
+{
+  "titulo": "Guitarra Gibson Les Paul",
+  "usuario_id": "6657b375a1d206f4a711f699",
+  "data": "2024-07-10T00:00:00Z",
+  "descricao": "Guitarra Gibson Les Paul, pouco uso",
+  "municipio": "Campinas",
+  "uf": "SP",
+  "preco": "1999.99",
+  "midia": "guitarra_gibson.jpg"
+}
+
+
+{
+  "titulo": "Guitarra Gibson Les Paul",
+  "usuario_id": "6657b375a1d206f4a711f699",
+  "data": "2024-07-10T00:00:00Z",
+  "descricao": "Guitarra Gibson Les Paul, pouco uso",
+  "municipio": "Campinas",
+  "uf": "SP",
+  "preco": "1999.99",
+  "midia": "guitarra_gibson.jpg"
+}
+
+
+{
+  "titulo": "Violino Stradivarius",
+  "usuario_id": "6657b383a1d206f4a711f69b",
+  "data": "2024-08-05T00:00:00Z",
+  "descricao": "Violino Stradivarius em perfeito estado",
+  "municipio": "São Paulo",
+  "uf": "SP",
+  "preco": "2500.00",
+  "midia": "violino_stradivarius.jpg"
+}
+
+
+{
+  "titulo": "Sintetizador Roland",
+  "usuario_id": "6657b391a1d206f4a711f69d",
+  "data": "2024-09-01T00:00:00Z",
+  "descricao": "Sintetizador Roland com diversos efeitos",
+  "municipio": "Belo Horizonte",
+  "uf": "MG",
+  "preco": "1500.00",
+  "midia": "sintetizador_roland.jpg"
+}
+
+
+{
+  "titulo": "Saxofone Yamaha",
+  "usuario_id": "6657b3a4a1d206f4a711f69f",
+  "data": "2024-10-10T00:00:00Z",
+  "descricao": "Saxofone Yamaha em excelente condição",
+  "municipio": "Curitiba",
+  "uf": "PR",
+  "preco": "1800.00",
+  "midia": "saxofone_yamaha.jpg"
+}
+
+
+{
+  "titulo": "Violão Clássico Giannini",
+  "usuario_id": "6657b3b6a1d206f4a711f6a1",
+  "data": "2024-11-05T00:00:00Z",
+  "descricao": "Violão Clássico Giannini, usado, ótimo som",
+  "municipio": "Porto Alegre",
+  "uf": "RS",
+  "preco": "499.99",
+  "midia": "violao_giannini.jpg"
+}
+
+
+{
+  "titulo": "Baixo Ibanez",
+  "usuario_id": "6657b3c6a1d206f4a711f6a3",
+  "data": "2024-12-15T00:00:00Z",
+  "descricao": "Baixo Ibanez com case, usado",
+  "municipio": "Salvador",
+  "uf": "BA",
+  "preco": "699.99",
+  "midia": "baixo_ibanez.jpg"
+}
+
+
+{
+  "titulo": "Guitarra PRS Custom 24",
+  "usuario_id": "6657b3d2a1d206f4a711f6a5",
+  "data": "2025-01-05T00:00:00Z",
+  "descricao": "Guitarra PRS Custom 24 em perfeito estado",
+  "municipio": "Brasília",
+  "uf": "DF",
+  "preco": "2200.00",
+  "midia": "guitarra_prs.jpg"
+}
+
+
+{
+  "titulo": "Microfone AKG C414",
+  "usuario_id": "6657b3dca1d206f4a711f6a7",
+  "data": "2025-01-20T00:00:00Z",
+  "descricao": "Microfone AKG C414 em excelente estado",
+  "municipio": "Fortaleza",
+  "uf": "CE",
+  "preco": "1500.00",
+  "midia": "microfone_akg.jpg"
+}
+
+
+{
+  "titulo": "Teclado Nord Stage 3",
+  "usuario_id": "6657b3eaa1d206f4a711f6a9",
+  "data": "2025-02-15T00:00:00Z",
+  "descricao": "Teclado Nord Stage 3 com menos de um ano de uso",
+  "municipio": "Manaus",
+  "uf": "AM",
+  "preco": "3000.00",
+  "midia": "teclado_nord.jpg"
+}
+
+
+////////////////////////////////
+
+{
+  "titulo": "Quarteto de Cordas",
+  "usuario_id": "6657b344a1d206f4a711f697",
+  "descricao": "Quarteto especializado em música clássica para eventos",
+  "data": "2024-06-01T00:00:00Z",
+  "objetivo":  [
+    "freelance"
+  ],
+  "municipio": "Ribeirão Preto",
+  "uf": "SP",
+  "estilo": [
+    "clássica"
+  ],
+  "procura":  [
+    "violino"
+  ],
+  "link": "instagram.com/quartetodecordas"
+}
+
+
+{
+  "titulo": "Banda Indie",
+  "usuario_id": "6657b375a1d206f4a711f699",
+  "descricao": "Banda indie buscando novos integrantes",
+  "data": "2024-07-15T00:00:00Z",
+  "objetivo":  [
+    "autoral"
+  ],
+  "municipio": "Campinas",
+  "uf": "SP",
+  "estilo": [
+    "rock"
+  ],
+  "procura":  [
+    "baixo"
+  ],
+  "link": "instagram.com/bandaindie"
+}
+
+
+
+{
+  "titulo": "Orquestra de Câmara",
+  "usuario_id": "6657b383a1d206f4a711f69b",
+  "descricao": "Orquestra de câmara com repertório variado",
+  "data": "2024-08-20T00:00:00Z",
+  "objetivo":  [
+    "hobby"
+  ],
+  "municipio": "São Paulo",
+  "uf": "SP",
+  "estilo": [
+    "clássica"
+  ],
+  "procura":  [
+    "saxofone"
+  ],
+  "link": "instagram.com/orquestradecamara"
+}
+
+
+
+
+{
+  "titulo": "Banda de Pop Rock",
+  "usuario_id": "6657b391a1d206f4a711f69d",
+  "descricao": "Banda de pop rock com shows regulares",
+  "data": "2024-09-05T00:00:00Z",
+  "objetivo":  [
+    "cover"
+  ],
+  "municipio": "Belo Horizonte",
+  "uf": "MG",
+  "estilo": [
+    "pop"
+  ],
+  "procura":  [
+    "bateria"
+  ],
+  "link": "instagram.com/bandapoprock"
+}
+
+
+
+
+{
+  "titulo": "Trio de Jazz",
+  "usuario_id": "6657b3a4a1d206f4a711f69f",
+  "descricao": "Trio de jazz com foco em eventos corporativos",
+  "data": "2024-10-10T00:00:00Z",
+  "objetivo":  [
+    "freelance"
+  ],
+  "municipio": "Curitiba",
+  "uf": "PR",
+  "estilo": [
+    "jazz"
+  ],
+  "procura":  [
+    "piano"
+  ],
+  "link": "instagram.com/triodejazz"
+}
+
+
+
+
+{
+  "titulo": "Banda de Blues",
+  "usuario_id": "6657b3b6a1d206f4a711f6a1",
+  "descricao": "Banda de blues procurando novos membros",
+  "data": "2024-11-01T00:00:00Z",
+  "objetivo":  [
+    "autoral"
+  ],
+  "municipio": "Porto Alegre",
+  "uf": "RS",
+  "estilo": [
+    "blues"
+  ],
+  "procura":  [
+    "guitarra"
+  ],
+  "link": "instagram.com/bandablues"
+}
+
+
+
+{
+  "titulo": "Projeto Acústico",
+  "usuario_id": "6657b3c6a1d206f4a711f6a3",
+  "descricao": "Projeto acústico com repertório variado",
+  "data": "2024-12-01T00:00:00Z",
+  "objetivo":  [
+    "hobby"
+  ],
+  "municipio": "Salvador",
+  "uf": "BA",
+  "estilo": [
+    "folk"
+  ],
+  "procura":  [
+    "vocal"
+  ],
+  "link": "instagram.com/projetoacustico"
+}
+
+
+
+{
+  "titulo": "Banda de Rock Progressivo",
+  "usuario_id": "6657b3d2a1d206f4a711f6a5",
+  "descricao": "Banda de rock progressivo com material próprio",
+  "data": "2025-01-01T00:00:00Z",
+  "objetivo":  [
+    "autoral"
+  ],
+  "municipio": "Brasília",
+  "uf": "DF",
+  "estilo": [
+    "rock"
+  ],
+  "procura":  [
+    "teclado"
+  ],
+  "link": "instagram.com/rockprogressivo"
+}
+
+
+
+{
+  "titulo": "Dueto Pop",
+  "usuario_id": "6657b3dca1d206f4a711f6a7",
+  "descricao": "Dueto pop com apresentações regulares",
+  "data": "2025-02-01T00:00:00Z",
+  "objetivo":  [
+    "cover"
+  ],
+  "municipio": "Fortaleza",
+  "uf": "CE",
+  "estilo": [
+    "pop"
+  ],
+  "procura":  [
+    "baixo"
+  ],
+  "link": "instagram.com/duetopop"
+}
+
+
+
+{
+  "titulo": "Coro Gospel",
+  "usuario_id": "6657b3eaa1d206f4a711f6a9",
+  "descricao": "Coro gospel com foco em eventos religiosos",
+  "data": "2025-03-01T00:00:00Z",
+  "objetivo":  [
+    "freelance"
+  ],
+  "municipio": "Manaus",
+  "uf": "AM",
+  "estilo": [
+    "gospel"
+  ],
+  "procura":  [
+    "piano"
+  ],
+  "link": "instagram.com/corogospel"
+}
+
+
+
+{
+  "titulo": "Banda de Reggae",
+  "usuario_id": "662c2ce9e363e968531bb19d",
+  "descricao": "Banda de reggae em busca de novos membros",
+  "data": "2024-04-20T00:00:00Z",
+  "objetivo":  [
+    "hobby"
+  ],
+  "municipio": "Franca",
+  "uf": "SP",
+  "estilo": [
+    "reggae"
+  ],
+  "procura":  [
+    "teclado"
+  ],
+  "link": "instagram.com/bandareggae"
+}
+
+//////////////////////////////////
+
+
+
+
