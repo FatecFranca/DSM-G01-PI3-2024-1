@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import styles from './Cadastro-usuario.module.css';
 
 const estadosBrasil = [
@@ -8,18 +7,17 @@ const estadosBrasil = [
 ];
 
 const influenciasOptions = [
-  "Rock", "Pop", "Eletrônica", "Samba", "Reggae", "MPB", "Clássica", "Gospel",
-  "Forró", "Axé", "Sertanejo", "Hip Hop", "Rap", "Outros"
+  "Rock", "Pop", "Eletrônica", "Folk", "Samba", "Reggae", "MPB", "Jazz", "Soul", "Blues", "Clássica", "Gospel",
+  "Forró", "Axé", "Sertanejo", "Hip Hop", "Rap", "Funk", "Outros"
 ];
 
 const habilidadesOptions = [
   "Baixo", "Guitarra", "Violão", "Bateria", "Vocal", "Backvocal", "Percussão",
-  "Teclado", "Violino", "Viola", "Saxofone", "Outros"
+  "Teclado", "Violino", "Viola", "Saxofone", "Piano", "Acordeon", "Outros"
 ];
 
 const CadastroUsuario = () => {
-  const [usuario, setUsuario] = useState({
-    _id: '',
+  const [usuarios, setUsuario] = useState({
     nome: '',
     cpf: '',
     data_nascimento: '',
@@ -63,94 +61,83 @@ const CadastroUsuario = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (usuario.senha !== usuario.confirmSenha) {
+    if (usuarios.senha !== usuarios.confirmSenha) {
       setErrorMessage('Senhas não conferem');
       return;
     }
-
-    const formData = new FormData();
-    Object.keys(usuario).forEach(key => {
-      if (key === 'influencias' || key === 'habilidades') {
-        usuario[key].forEach(item => formData.append(key, item));
-      } else {
-        formData.append(key, usuario[key]);
-      }
+    console.log('Dados do usuário:', usuarios);
+    setErrorMessage('');
+    setUsuario({
+      nome: '',
+      cpf: '',
+      data_nascimento: '',
+      municipio: '',
+      uf: '',
+      foto_user: '',
+      bio: '',
+      influencias: [],
+      habilidades: [],
+      telefone: '',
+      instagram: '',
+      facebook: '',
+      youtube: '',
+      email: '',
+      senha: '',
+      confirmSenha: ''
     });
-
-    try {
-      const response = await axios.post('/api/usuarios', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
-      console.log('Dados do usuário enviados com sucesso:', response.data);
-      setErrorMessage('');
-      setUsuario({
-        _id: '',
-        nome: '',
-        cpf: '',
-        data_nascimento: '',
-        municipio: '',
-        uf: '',
-        foto_user: '',
-        bio: '',
-        influencias: [],
-        habilidades: [],
-        telefone: '',
-        instagram: '',
-        facebook: '',
-        youtube: '',
-        email: '',
-        senha: '',
-        confirmSenha: ''
-      });
-    } catch (error) {
-      console.error('Erro ao enviar dados do usuário:', error);
-      setErrorMessage('Erro ao enviar dados do usuário');
-    }
   };
 
   return (
     <div className={styles.cadastroUsuario}>
       <div className={styles.form}>
-        <form onSubmit={handleSubmit}>
-          <h2>- DADOS PESSOAIS -</h2>
-          <div className={styles.campo}>
+        <form method="POST" onSubmit={handleSubmit}>
+
+
+            <h2>- DADOS PESSOAIS -</h2>
+            <div className={styles.campo}>
             <label htmlFor="nome">NOME:</label>
-            <input type="text" id="nome" name="nome" value={usuario.nome} onChange={handleChange} required />
+            <input type="text" id="nome" name="nome" value={usuarios.nome} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" value={usuario.cpf} onChange={handleChange} required />
+            <input type="text" id="cpf" name="cpf" value={usuarios.cpf} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="data_nascimento">DATA DE NASCIMENTO:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento" value={usuario.data_nascimento} onChange={handleChange} required />
+            <input type="date" id="data_nascimento" name="data_nascimento" value={usuarios.data_nascimento} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="municipio">MUNICÍPIO:</label>
-            <input type="text" id="municipio" name="municipio" value={usuario.municipio} onChange={handleChange} required />
+            <input type="text" id="municipio" name="municipio" value={usuarios.municipio} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="uf">ESTADO:</label>
-            <select id="uf" name="uf" value={usuario.uf} onChange={handleChange} required>
+            <select id="uf" name="uf" value={usuarios.uf} onChange={handleChange} required>
               <option value="">Selecione</option>
               {estadosBrasil.map(estado => (
                 <option key={estado} value={estado}>{estado}</option>
               ))}
             </select>
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="foto_user">FOTO DE PERFIL:</label>
             <input type="file" id="foto_user" name="foto_user" onChange={handleFileChange} required />
           </div>
+
           <h2>- INFOS MUSICAIS -</h2>
+
           <div className={styles.campo}>
             <label htmlFor="bio">BIO:</label>
-            <textarea id="bio" name="bio" value={usuario.bio} onChange={handleChange} required className={styles.bioTextArea} />
+            <textarea id="bio" name="bio" value={usuarios.bio} onChange={handleChange} required className={styles.bioTextArea} />
           </div>
+
           <div className={styles.campo}>
             <label>INFLUÊNCIAS:</label>
             <div className={styles.checkboxContainer}>
@@ -161,7 +148,7 @@ const CadastroUsuario = () => {
                     id={influencia}
                     name="influencias"
                     value={influencia}
-                    checked={usuario.influencias.includes(influencia)}
+                    checked={usuarios.influencias.includes(influencia)}
                     onChange={handleChange}
                   />
                   <label htmlFor={influencia}>{influencia}</label>
@@ -169,6 +156,7 @@ const CadastroUsuario = () => {
               ))}
             </div>
           </div>
+
           <div className={styles.campo}>
             <label>HABILIDADES:</label>
             <div className={styles.checkboxContainer}>
@@ -179,7 +167,7 @@ const CadastroUsuario = () => {
                     id={habilidade}
                     name="habilidades"
                     value={habilidade}
-                    checked={usuario.habilidades.includes(habilidade)}
+                    checked={usuarios.habilidades.includes(habilidade)}
                     onChange={handleChange}
                   />
                   <label htmlFor={habilidade}>{habilidade}</label>
@@ -188,52 +176,53 @@ const CadastroUsuario = () => {
             </div>
           </div>
 
+
           <h2>- CONTATOS -</h2>
+
           <div className={styles.campo}>
             <label htmlFor="telefone">TELEFONE:</label>
-            <input type="text" id="telefone" name="telefone" value={usuario.telefone} onChange={handleChange} required />
+            <input type="text" id="telefone" name="telefone" value={usuarios.telefone} onChange={handleChange} required />
           </div>
 
           <div className={styles.campo}>
             <label htmlFor="instagram">INSTAGRAM:</label>
-            <input type="text" id="instagram" name="instagram" value={usuario.instagram} onChange={handleChange} required />
+            <input type="text" id="instagram" name="instagram" value={usuarios.instagram} onChange={handleChange} required />
           </div>
 
           <div className={styles.campo}>
             <label htmlFor="facebook">FACEBOOK:</label>
-            <input type="text" id="facebook" name="facebook" value={usuario.facebook} onChange={handleChange} required />
+            <input type="text" id="facebook" name="facebook" value={usuarios.facebook} onChange={handleChange} required />
           </div>
 
           <div className={styles.campo}>
             <label htmlFor="youtube">YOUTUBE:</label>
-            <input type="text" id="youtube" name="youtube" value={usuario.youtube} onChange={handleChange} required />
+            <input type="text" id="youtube" name="youtube" value={usuarios.youtube} onChange={handleChange} required />
           </div>
+
 
           <h2>- CADASTRO -</h2>
 
           <div className={styles.campo}>
             <label htmlFor="email">EMAIL:</label>
-            <input type="email" id="email" name="email" value={usuario.email} onChange={handleChange} required />
+            <input type="email" id="email" name="email" value={usuarios.email} onChange={handleChange} required />
           </div>
 
           <div className={styles.campo}>
             <label htmlFor="senha">SENHA:</label>
-            <input type="password" id="senha" name="senha" value={usuario.senha} onChange={handleChange} required />
+            <input type="password" id="senha" name="senha" value={usuarios.senha} onChange={handleChange} required />
           </div>
 
           <div className={styles.campo}>
             <label htmlFor="confirmSenha">CONFIRMAR SENHA:</label>
-            <input type="password" id="confirmSenha" name="confirmSenha" value={usuario.confirmSenha} onChange={handleChange} required />
+            <input type="password" id="confirmSenha" name="confirmSenha" value={usuarios.confirmSenha} onChange={handleChange} required />
           </div>
           
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-
           <button className={styles.botao} type="submit">ENVIAR</button>
-
-<br />
-<br />
-<br />
-
+< br />
+< br />
+< br />
+< br />
         </form>
       </div>
     </div>
@@ -241,4 +230,3 @@ const CadastroUsuario = () => {
 };
 
 export default CadastroUsuario;
-
