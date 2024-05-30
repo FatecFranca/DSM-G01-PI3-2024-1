@@ -453,28 +453,6 @@
 
 
 
-////////////////////////////////////////// projetos
-
-{
-  "titulo": "Banda Rockers",
-  "usuario_id": "662c2ce9e363e968531bb19d",
-  "descricao": "Banda com 5 anos de estrada, com interesse em gravar novo album autoral",
-  "data": "2024-03-17T00:00:00Z",
-  "objetivo":  [
-    "autoral"
-  ],
-  "municipio": "Franca",
-  "uf": "SP",
-  "estilo": [
-    "rock"
-  ],
-  "procura":  [
-    "vocal",
-    "bateria"
-  ],
-  "link": "instagram.com/rockers"
-}
-
 
 ////////////////////////////////////////// vendas
 
@@ -611,6 +589,28 @@
 
 
 ////////////////////////////////
+
+
+{
+  "titulo": "Banda Rockers",
+  "usuario_id": "662c2ce9e363e968531bb19d",
+  "descricao": "Banda com 5 anos de estrada, com interesse em gravar novo album autoral",
+  "data": "2024-03-17T00:00:00Z",
+  "objetivo":  [
+    "autoral"
+  ],
+  "municipio": "Franca",
+  "uf": "SP",
+  "estilo": [
+    "rock"
+  ],
+  "procura":  [
+    "vocal",
+    "bateria"
+  ],
+  "link": "instagram.com/rockers"
+}
+
 
 {
   "titulo": "Quarteto de Cordas",
