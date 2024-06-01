@@ -73,39 +73,27 @@ const CriarAnuncio = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.titulo}>Anúncio de Venda</h2>
       <form className={styles.form} onSubmit={handleSubmit}>
+      <h2 className={styles.titulo}>ANÚNCIO</h2>
         <div className={styles.campo}>
-          <label htmlFor="titulo">Título:</label>
+          <label htmlFor="titulo">TÍTULO:</label>
           <input type="text" id="titulo" name="titulo" value={venda.titulo} onChange={handleChange} required />
         </div>
         <div className={styles.campo}>
-          <label htmlFor="descricao">Descrição:</label>
+          <label htmlFor="descricao">DESCRIÇÃO:</label>
           <textarea id="descricao" name="descricao" value={venda.descricao} onChange={handleChange} required />
         </div>
+
         <div className={styles.campo}>
-          <label htmlFor="municipio">Município:</label>
-          <input type="text" id="municipio" name="municipio" value={venda.municipio} onChange={handleChange} required />
-        </div>
-        <div className={styles.campo}>
-          <label htmlFor="uf">Estado:</label>
-          <select id="uf" name="uf" value={venda.uf} onChange={handleChange} required>
-            <option value="">Selecione o Estado</option>
-            {estadosBrasil.map(estado => (
-              <option key={estado} value={estado}>{estado}</option>
-            ))}
-          </select>
-        </div>
-        <div className={styles.campo}>
-          <label htmlFor="preco">Preço:</label>
+          <label htmlFor="preco">PREÇO:</label>
           <input type="number" id="preco" name="preco" value={venda.preco} onChange={handleChange} required />
         </div>
         <div className={styles.campo}>
-          <label htmlFor="midia">Mídia:</label>
+          <label htmlFor="midia">MÍDIA:</label>
           <input type="file" id="midia" name="midia" onChange={handleMidiaChange} accept="image/*" required />
         </div>
-        <div className={styles.botao}>
-          <button type="submit">Salvar</button>
+        <div>
+          <button className={styles.botao} type="submit">SALVAR</button>
         </div>
       </form>
     </div>

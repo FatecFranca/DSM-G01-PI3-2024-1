@@ -6,20 +6,24 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #1A212A; /* Cor de fundo da página inteira */
+    overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
 }
 
+
 .cadastroUsuario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #22394D; /* Cor de fundo do formulário */
-    width: 90%;
+    height: 100vh; /* Garante que o contêiner ocupe toda a altura da janela */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    display: flex; /* Usa flexbox para alinhar itens verticalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: flex-start;
+    justify-content: flex-start; /* Alinha os itens no início do contêiner */
     max-width: 500px;
     border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box; /* Inclui o padding dentro da largura */
-    margin: 20px;
+    padding: 30px;
+    background-color: transparent; /* Cor de fundo do formulário */
 }
+
 
 .form {
     display: flex;
@@ -32,13 +36,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 0px;
     color: aliceblue;
     width: 100%;
 }
 
 .campo input, .campo textarea, .campo select {
-    background-color: #1A212A;
+    background-color: #22394D;
     color: aliceblue; /* Cor do texto branco */
     border-radius: 5px;
     outline: none;
@@ -55,14 +59,10 @@ body {
     font-size: 16px;
 }
 
+
+
 .botao {
     margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.botao button {
     background-color: #CC353C; /* Cor de fundo vermelha */
     color: white; /* Cor do texto */
     border: none; /* Remova a borda */
@@ -72,19 +72,18 @@ body {
     text-align: center; /* Alinhe o texto ao centro */
     outline: none; /* Remova o contorno */
     width: 100%;
-    max-width: 300px;
     transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+
 }
 
 /* Estilos para o botão hover */
-.botao button:hover {
+.botao:hover {
     background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
 }
 
 h2 {
-    color: rgb(255, 243, 135);
+    color: rgb(218, 255, 7);
     text-align: center;
-    margin-top: 0;
 }
 
 .bioTextArea {
@@ -99,17 +98,19 @@ h2 {
 }
 
 .checkboxItem {
-    width: 45%; /* Largura de cada coluna */
+    width: 50%; /* Largura de cada coluna */
     color: aliceblue; /* Cor do texto dos labels dos checkboxes */
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Adiciona espaço entre os checkboxes */
+    margin-bottom: 0px; /* Adiciona espaço entre os checkboxes */
 }
 
 .checkboxItem input {
+    width: 20px; /* Reduz a largura do checkbox */
+    height: 20px; /* Define a altura do checkbox */
     margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
-    transform: scale(0.4); /* Reduz o tamanho das checkboxes */
 }
+
 .errorMessage {
     color: red;
     text-align: center;

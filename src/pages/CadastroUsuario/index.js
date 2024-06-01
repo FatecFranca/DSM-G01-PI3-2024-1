@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import styles from './Cadastro-usuario.module.css';
 
 const estadosBrasil = [
@@ -18,6 +19,7 @@ const habilidadesOptions = [
 
 const CadastroUsuario = () => {
   const [usuario, setUsuario] = useState({
+    _id: '',
     nome: '',
     cpf: '',
     data_nascimento: '',
@@ -61,40 +63,61 @@ const CadastroUsuario = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (usuario.senha !== usuario.confirmSenha) {
       setErrorMessage('Senhas não conferem');
       return;
     }
-    console.log('Dados do usuário:', usuario);
-    setErrorMessage('');
-    setUsuario({
-      nome: '',
-      cpf: '',
-      data_nascimento: '',
-      municipio: '',
-      uf: '',
-      foto_user: '',
-      bio: '',
-      influencias: [],
-      habilidades: [],
-      telefone: '',
-      instagram: '',
-      facebook: '',
-      youtube: '',
-      email: '',
-      senha: '',
-      confirmSenha: ''
+
+    const formData = new FormData();
+    Object.keys(usuario).forEach(key => {
+      if (key === 'influencias' || key === 'habilidades') {
+        usuario[key].forEach(item => formData.append(key, item));
+      } else {
+        formData.append(key, usuario[key]);
+      }
     });
+
+    try {
+      const response = await axios.post('/api/usuarios', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
+      console.log('Dados do usuário enviados com sucesso:', response.data);
+      setErrorMessage('');
+      setUsuario({
+        _id: '',
+        nome: '',
+        cpf: '',
+        data_nascimento: '',
+        municipio: '',
+        uf: '',
+        foto_user: '',
+        bio: '',
+        influencias: [],
+        habilidades: [],
+        telefone: '',
+        instagram: '',
+        facebook: '',
+        youtube: '',
+        email: '',
+        senha: '',
+        confirmSenha: ''
+      });
+    } catch (error) {
+      console.error('Erro ao enviar dados do usuário:', error);
+      setErrorMessage('Erro ao enviar dados do usuário');
+    }
   };
 
   return (
     <div className={styles.cadastroUsuario}>
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
+          <h2>- DADOS PESSOAIS -</h2>
           <div className={styles.campo}>
-            <h2>           - DADOS PESSOAIS -</h2>
             <label htmlFor="nome">NOME:</label>
             <input type="text" id="nome" name="nome" value={usuario.nome} onChange={handleChange} required />
           </div>
@@ -123,8 +146,6 @@ const CadastroUsuario = () => {
             <label htmlFor="foto_user">FOTO DE PERFIL:</label>
             <input type="file" id="foto_user" name="foto_user" onChange={handleFileChange} required />
           </div>
-          <br />
-          <hr />
           <h2>- INFOS MUSICAIS -</h2>
           <div className={styles.campo}>
             <label htmlFor="bio">BIO:</label>
@@ -166,44 +187,53 @@ const CadastroUsuario = () => {
               ))}
             </div>
           </div>
-          <br />
-          <hr />
+
           <h2>- CONTATOS -</h2>
           <div className={styles.campo}>
             <label htmlFor="telefone">TELEFONE:</label>
             <input type="text" id="telefone" name="telefone" value={usuario.telefone} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="instagram">INSTAGRAM:</label>
             <input type="text" id="instagram" name="instagram" value={usuario.instagram} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="facebook">FACEBOOK:</label>
             <input type="text" id="facebook" name="facebook" value={usuario.facebook} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="youtube">YOUTUBE:</label>
             <input type="text" id="youtube" name="youtube" value={usuario.youtube} onChange={handleChange} required />
           </div>
-          <br />
-          <hr />
+
           <h2>- CADASTRO -</h2>
+
           <div className={styles.campo}>
             <label htmlFor="email">EMAIL:</label>
             <input type="email" id="email" name="email" value={usuario.email} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="senha">SENHA:</label>
             <input type="password" id="senha" name="senha" value={usuario.senha} onChange={handleChange} required />
           </div>
+
           <div className={styles.campo}>
             <label htmlFor="confirmSenha">CONFIRMAR SENHA:</label>
             <input type="password" id="confirmSenha" name="confirmSenha" value={usuario.confirmSenha} onChange={handleChange} required />
           </div>
+          
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-          <div className={styles.botao}>
-            <button type="submit">Salvar</button>
-          </div>
+
+          <button className={styles.botao} type="submit">ENVIAR</button>
+
+<br />
+<br />
+<br />
+
         </form>
       </div>
     </div>
