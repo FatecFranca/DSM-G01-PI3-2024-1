@@ -3,6 +3,44 @@ import AnunciosCard from '../../components/AnunciosCard';
 import styles from './Anuncios.module.css';
 import Header from '../../components/Header';
 
+
+
+
+
+
+
+// SESSÃO DO BANCO DE DADOS
+
+import api from '../../services/api.js'; // Importando o serviço de API
+
+ //CONECTANDO API DO BANCO DE DADOS
+
+ const Anuncios = () => {
+  const [projetos, setAnuncios] = useState([]); // Estado para armazenar os projetos
+
+  useEffect(() => {
+    const fetchAnuncios = async () => {
+      try {
+        const response = await api.get('/anuncios'); // Fazendo a requisição para buscar os projetos
+        setAnuncios(response.data); // Armazenando os dados no estado
+      } catch (error) {
+        console.error('Erro ao buscar anuncios:', error);
+      }
+    };
+
+    fetchAnuncios(); // Chamando a função para buscar os projetos quando o componente for montado
+  }, []); // O array vazio como segundo argumento garante que o useEffect seja executado apenas uma vez
+
+
+
+
+
+
+
+
+
+
+
 const AnunciosPage = () => {
   const [posts, setPosts] = useState([]);
 
