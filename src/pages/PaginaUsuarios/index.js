@@ -58,4 +58,3 @@ const UsersPage = () => {
 };
 
 export default UsersPage;
-"PaginaUsuarios"

@@ -19,4 +19,3 @@ const UsersCard = ({ post }) => {
 };
 
 export default UsersCard;
-"UsersCard" - components
