@@ -1,0 +1,18 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 500px; /* Ajuste conforme a altura do header */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black; /* Cor do texto preta */
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
