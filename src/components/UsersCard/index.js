@@ -12,7 +12,6 @@ const UsersCard = ({ post }) => {
         <h2>Influência: {post.influencias}</h2>
         <h2>Habilidades: {post.habilidades}</h2>
         <h2>Bio: {post.bio}</h2>
-        <p> {new Date(post.data).toLocaleDateString()}</p>
       </div>
     </div>
   );
