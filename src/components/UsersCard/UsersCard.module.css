@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .media {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .content {
+    flex: 1;
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  .content h2 {
+    color: black;
+    margin: 0 0 10px; /* Margem do título */
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    text-align: left;
+  }
+
+  .content p {
+    color: black;
+  }
