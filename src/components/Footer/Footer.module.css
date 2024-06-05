@@ -1,7 +1,90 @@
-.footer {
-    background-color: #22394D;
-    color: white;
-    text-align: center;
-    padding: 20px;
+main {
+  margin-top: 200px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+
+.header {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 10px; /* Reduzi o padding para melhor responsividade */
+  background-color: #22394D;
+
+  top: 0;
+  left: 0;
+  width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
+  box-sizing: border-box;
+}
+
+.links nav a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+
+.botao {
+  background-color: #CC353C; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto */
+  border: none; /* Remova a borda */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  padding: 10px 20px; /* Adicione preenchimento interno */
+  cursor: pointer; /* Altere o cursor ao passar */
+  text-align: center; /* Alinhe o texto ao centro */
+  outline: none; /* Remova o contorno */
+  width: 100%;
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Estilos para o botão hover */
+.botao:hover {
+  background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
+}
+
+
+.logo {
+  width: 150px; /* Ajuste a largura para melhor responsividade */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Adiciona um margin-top ao conteúdo principal para evitar que ele fique oculto atrás do cabeçalho fixo */
+main {
+  margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
   }
-  
+
+  .botoes {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+  }
+
+  .botoes button {
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem;
+  }
+
+  .logo {
+      width: 120px; /* Ajuste a largura para melhor responsividade */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 10px;
+  }
+
+  .botoes button {
+      padding: 0.5rem;
+  }
+
+  .logo {
+      width: 100px; /* Ajuste a largura para melhor responsividade */
+  }
+}

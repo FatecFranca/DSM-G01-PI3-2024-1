@@ -1,5 +1,5 @@
 main {
-    margin-top: 150px; /* Ajuste este valor conforme a altura do cabeçalho */
+    margin-top: 200px; /* Ajuste este valor conforme a altura do cabeçalho */
 }
 
 .header {
@@ -12,6 +12,7 @@ main {
     top: 0;
     left: 0;
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
+    box-sizing: border-box;
 }
 
 .links nav a {

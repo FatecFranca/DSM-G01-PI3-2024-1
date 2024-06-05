@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AnunciosCard from '../../components/AnunciosCard';
 import styles from './Anuncios.module.css';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer/index';
 
 
 const AnunciosPage = () => {
@@ -14,7 +15,7 @@ const AnunciosPage = () => {
         _id: '1',
         usuario_id: '123',
         nome: 'José',
-        titulo: 'guitarra',
+        titulo: 'Guitarra',
         valor: 'R$ 1000,00',
         cidade: 'São Paulo',
         data: new Date().toISOString(),
@@ -81,16 +82,16 @@ const AnunciosPage = () => {
   }, []);
 
   return (
-
     <div className={styles.container}>
         <Header/>
-      <h1>Anuncios</h1>
+      <h1>ANÚNCIOS</h1>
       <div className={styles.grid}>
         {posts.map((post) => (
           <AnunciosCard key={post._id} post={post} />
         ))}
       </div>
     </div>
+
   );
 };
 

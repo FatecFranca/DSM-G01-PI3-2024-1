@@ -1,5 +1,4 @@
 import AppRoutes from './routes';
-import api from './services/api';
 
 
 
