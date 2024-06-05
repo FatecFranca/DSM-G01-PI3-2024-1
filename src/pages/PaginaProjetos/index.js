@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProjetosCard from '../../components/ProjetosCard';
 import styles from './Projetos.module.css';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer/index';
 
 const ProjetosPage = () => {
   const [posts, setPosts] = useState([]);
@@ -96,7 +97,7 @@ const ProjetosPage = () => {
 
     <div className={styles.container}>
         <Header/>
-      <h1>Projetos</h1>
+      <h1>PROJETOS</h1>
       <div className={styles.grid}>
         {posts.map((post) => (
           <ProjetosCard key={post._id} post={post} />

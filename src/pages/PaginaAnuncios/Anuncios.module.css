@@ -2,7 +2,7 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 1200px;
+    margin-top: 800px;
   }
   
   h1 {
@@ -18,7 +18,7 @@
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 colunas por linha */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas por linha */
     gap: 20px;
   }
   

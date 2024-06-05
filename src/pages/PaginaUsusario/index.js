@@ -5,6 +5,7 @@ import ProjetosPage from '../../components/Projetos-pagUsuario/index';
 import styles from './PaginaUsuario.module.css';
 import HeaderUser from './componentsUser/HeaderUser';
 import InfosUser from './componentsUser/InfoUser';
+import Footer from '../../components/Footer/index';
 
 const PaginaUsuario = () => {
     const [paginaAtual, setPaginaAtual] = useState('posts'); // Inicialmente, exibir os posts

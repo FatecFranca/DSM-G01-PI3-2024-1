@@ -3,7 +3,7 @@
     width: 95%;
     background-color: #f0f0f0; /* Ajuste a cor de fundo conforme necessário */
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione sombra ao card */
     border-radius: 5px; /* Bordas arredondadas */
     box-sizing: border-box; /* Inclui padding e border no tamanho total */
@@ -12,7 +12,7 @@
   .media {
     width: 200px; /* Largura da imagem */
     height: 200px; /* Altura da imagem */
-    border-radius: 50%; /* Torna a imagem redonda */
+    border-radius: 10%; /* Torna a imagem redonda */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
     margin-right: 20px; /* Espaço entre a imagem e o conteúdo */
   }
@@ -25,14 +25,14 @@
   .content h2 {
     color: black;
     margin: 0 0 10px; /* Margem do título */
-    font-size: 1.5em; /* Tamanho da fonte do título */
+    font-size: 1.1em; /* Tamanho da fonte do título */
     text-align: left;
   }
   
   h3 {
     color: black;
     margin: 0 0 10px; /* Margem da descrição */
-    font-size: 1.2em; /* Tamanho da fonte da descrição */
+    font-size: 1.0em; /* Tamanho da fonte da descrição */
   }
   
   p {

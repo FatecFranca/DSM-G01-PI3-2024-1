@@ -4,7 +4,7 @@ const DataFetcher = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
+    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
 
     fetch(`${API_BASE_URL}/api/endpoint`)  // Substitua '/api/endpoint' pelo endpoint correto
       .then(response => response.json())

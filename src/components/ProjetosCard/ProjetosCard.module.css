@@ -1,20 +1,20 @@
 .card {
-    display: flex;
-    width: 100%;
-    background-color: #ffffff; /* Ajuste a cor de fundo conforme necessário */
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione sombra ao card */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total */
-  }
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
   
   .media {
     width: 200px; /* Largura da imagem */
     height: 200px; /* Altura da imagem */
-    border-radius: 50%; /* Torna a imagem redonda */
+    border-radius: 10%; /* Torna a imagem redonda */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
     margin-right: 20px; /* Espaço entre a imagem e o conteúdo */
   }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PostCard from '../../components/PostCard';
 import styles from './TimeLine.module.css';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer/index';
 
 const PostsPage = () => {
   const [posts, setPosts] = useState([]);
@@ -65,7 +66,7 @@ const PostsPage = () => {
 
     <div className={styles.container}>
         <Header/>
-      <h1>Posts</h1>
+      <h1>POSTS TIMELINE</h1>
       <div className={styles.grid}>
         {posts.map((post) => (
           <PostCard key={post._id} post={post} />
