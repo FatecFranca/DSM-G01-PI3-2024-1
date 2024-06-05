@@ -4,7 +4,7 @@ body {
     width: 100vw;
     overflow-x: hidden; /* Evitar overflow horizontal */
     overflow-y:auto;
-    margin-top: 00px;
+    margin-top: 0px;
     min-height: 100VH;
 }
 
@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: column; /* Alterar para coluna para telas menores */
     padding: 0; /* Adicionar padding lateral para afastar o conteúdo da borda da tela */
-    MARGIN: 0;
+    margin: 0;
 }
 
 .botao {
