@@ -1,17 +1,17 @@
 .card {
     display: flex;
-    width: 100%;
+    width: 95%;
     background-color: #f0f0f0; /* Ajuste a cor de fundo conforme necessário */
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione sombra ao card */
-    border-radius: ; /* Bordas arredondadas */
+    border-radius: 5px; /* Bordas arredondadas */
     box-sizing: border-box; /* Inclui padding e border no tamanho total */
   }
   
   .media {
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
+    width: 200px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
     border-radius: 50%; /* Torna a imagem redonda */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
     margin-right: 20px; /* Espaço entre a imagem e o conteúdo */
