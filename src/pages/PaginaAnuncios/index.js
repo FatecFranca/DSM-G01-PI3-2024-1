@@ -4,7 +4,6 @@ import styles from './Anuncios.module.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer/index';
 
-
 const AnunciosPage = () => {
   const [posts, setPosts] = useState([]);
 

@@ -9,7 +9,7 @@ body {
 }
 
 .banner {
-    margin: 0;
+    margin-top: 200px;
     padding: 0;
     width: 100%;
 }
@@ -31,12 +31,21 @@ body {
     padding: 30px;
 }
 
+h2 {
+    color: rgb(200, 255, 0);
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%; /* Reduzir a largura do texto para telas menores */
+    margin: auto; /* Centralizar o texto na tela */
+    padding: 30px;
+}
+
 
 .container {
     display: flex;
     flex-direction: column; /* Alterar para coluna para telas menores */
     padding: 0; /* Adicionar padding lateral para afastar o conteúdo da borda da tela */
-    margin: 0;
+    MARGIN: 0;
 }
 
 .botao {
