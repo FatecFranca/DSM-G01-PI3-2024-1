@@ -4,12 +4,12 @@ body {
     width: 100vw;
     overflow-x: hidden; /* Evitar overflow horizontal */
     overflow-y:auto;
-    margin-top: 00px;
+    margin-top: 0px;
     min-height: 100VH;
 }
 
 .banner {
-    margin: 0;
+    margin-top: 200px;
     padding: 0;
     width: 100%;
 }
@@ -27,6 +27,15 @@ body {
     text-align: center;
     text-transform: uppercase;
     width: 90%; /* Reduzir a largura do texto para telas menores */
+    margin: auto; /* Centralizar o texto na tela */
+    padding: 30px;
+}
+
+h2 {
+    color: rgb(200, 255, 0);
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%; /* Reduzir a largura do texto para telas menores */
     margin: auto; /* Centralizar o texto na tela */
     padding: 30px;
 }

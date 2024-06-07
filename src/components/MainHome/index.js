@@ -1,6 +1,7 @@
 import React from 'react'  
 import banner from '../../assets/Background-Image.png'
 import styles from './MainHome.module.css'
+
 export function Conteudo () {
     return (    
         <div className={styles.conteudo}>
