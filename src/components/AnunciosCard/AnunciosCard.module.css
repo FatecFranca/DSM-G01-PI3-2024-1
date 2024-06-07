@@ -36,10 +36,12 @@
   }
   .content1{
     padding: 15px;
+
   }
   .content1 h2 {
-    padding: 0;
+    padding: 2px;
     margin: 0px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #c2f800;
+    text-align: center;
   }

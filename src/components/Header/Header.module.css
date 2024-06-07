@@ -13,6 +13,7 @@ main {
     left: 0;
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
     box-sizing: border-box;
+    opacity: 95%;
 }
 
 .links nav a {
@@ -44,11 +45,6 @@ main {
 .logo {
     width: 150px; /* Ajuste a largura para melhor responsividade */
     height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Adiciona um margin-top ao conteúdo principal para evitar que ele fique oculto atrás do cabeçalho fixo */
-main {
-    margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
 }
 
 /* Media queries para responsividade */
