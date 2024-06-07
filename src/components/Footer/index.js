@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import '../../assets/Background-Image.png';
-import logo from '../../assets/logo_bandfinder.png';
 
-function Header() {
+
+function Footer() {
     return (
       <div>
-        <header className={styles.header}>
+        <header className={styles.footer}>
             <div>
               <h3>Band Finder - Todos os direitos reservados</h3>
             </div>
@@ -16,4 +16,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Footer;

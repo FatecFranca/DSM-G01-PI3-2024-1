@@ -1,24 +1,19 @@
 .container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 1550px;
+    padding: 10px;
+    margin-top: 0px;
+    width: 950px;
+    margin-top: 10px;
   }
   
   h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
-  }
-  h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
   }
   
   .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 3 colunas por linha */
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   

@@ -1,11 +1,12 @@
 .card {
     display: flex;
     width: 95%;
-    background-color: #f0f0f0; /* Ajuste a cor de fundo conforme necessário */
+    border: #3a5872 solid;
+    border-radius: 5px;
+    background-color: #22394D;
     padding: 20px;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione sombra ao card */
-    border-radius: 5px; /* Bordas arredondadas */
     box-sizing: border-box; /* Inclui padding e border no tamanho total */
   }
   
@@ -23,21 +24,16 @@
   }
   
   .content h2 {
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 0 0 10px; /* Margem do título */
     font-size: 1.1em; /* Tamanho da fonte do título */
     text-align: left;
   }
   
   h3 {
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 0 0 10px; /* Margem da descrição */
     font-size: 1.0em; /* Tamanho da fonte da descrição */
   }
   
-  p {
-    
-    margin: 0; /* Remove a margem do parágrafo */
-    color: #666; /* Cor do texto da data */
-  }
   

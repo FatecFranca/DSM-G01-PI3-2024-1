@@ -1,14 +1,14 @@
 .container {
-    padding: 20px;
+    padding: 10px;
     max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 450px; /* Ajuste conforme a altura do header */
+    margin: 0;
+    margin-top: 10px;
   }
   
   h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: black; /* Cor do texto preta */
+    color: rgb(208, 255, 0); /* Cor do texto preta */
   }
   
   .grid {

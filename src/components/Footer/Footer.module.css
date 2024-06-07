@@ -1,18 +1,10 @@
-main {
-  margin-top: 200px; /* Ajuste este valor conforme a altura do cabeçalho */
-}
-
 .header {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px; /* Reduzi o padding para melhor responsividade */
+  padding: 15px; /* Reduzi o padding para melhor responsividade */
   background-color: #22394D;
-
-  top: 0;
-  left: 0;
   width: 100%; /* Garante que o cabeçalho ocupe toda a largura da tela */
-  box-sizing: border-box;
 }
 
 .links nav a {

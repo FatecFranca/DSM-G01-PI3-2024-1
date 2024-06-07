@@ -74,13 +74,14 @@ const AnunciosPage = () => {
         cidade: 'Florianópolis',
         data: new Date().toISOString(),
         descricao: 'Descrição do Post 6',
-        midia: 'https://via.placeholder.com/150'
+        midia: 'http://via.placeholder.com/150'
       },
     ];
     setPosts(mockPosts);
   }, []);
 
   return (
+
     <div className={styles.container}>
         <Header/>
       <h1>ANÚNCIOS</h1>
@@ -90,6 +91,7 @@ const AnunciosPage = () => {
         ))}
       </div>
     </div>
+
 
   );
 };
