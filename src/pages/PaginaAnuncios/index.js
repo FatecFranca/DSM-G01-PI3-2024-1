@@ -81,6 +81,7 @@ const AnunciosPage = () => {
   }, []);
 
   return (
+
     <div className={styles.container}>
         <Header/>
       <h1>ANÚNCIOS</h1>
@@ -90,6 +91,7 @@ const AnunciosPage = () => {
         ))}
       </div>
     </div>
+
 
   );
 };

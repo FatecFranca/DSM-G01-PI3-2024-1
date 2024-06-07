@@ -15,7 +15,7 @@ const PostsPage = () => {
         usuario_id: '123',
         nome: 'José',
         data: new Date().toISOString(),
-        descricao: 'Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1Descrição do Post 1',
+        descricao: ' Descrição do Post 1Descrição do Post 1',
         midia: 'https://via.placeholder.com/150'
       },
       {
