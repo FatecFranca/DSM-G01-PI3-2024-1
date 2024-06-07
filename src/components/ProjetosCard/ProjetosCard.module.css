@@ -1,45 +1,35 @@
 .card {
+  height: 250px;
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: #3a5872 solid;
   border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #22394D;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
-  
-  .media {
-    width: 200px; /* Largura da imagem */
-    height: 200px; /* Altura da imagem */
-    border-radius: 10%; /* Torna a imagem redonda */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
-    margin-right: 20px; /* Espaço entre a imagem e o conteúdo */
-  }
-  
-  .content {
-    flex: 1; /* Faz o conteúdo ocupar o restante do espaço */
-    
-  }
-  
-  .content h2 {
-    color: black;
-    margin: 0 0 10px; /* Margem do título */
-    font-size: 1.1em; /* Tamanho da fonte do título */
-    text-align: left;
-  }
-  
-  h3 {
-    color: black;
-    margin: 0 0 10px; /* Margem da descrição */
-    font-size: 1.2em; /* Tamanho da fonte da descrição */
-  }
-  
-  p {
-    
-    margin: 0; /* Remove a margem do parágrafo */
-    color: #666; /* Cor do texto da data */
-  }
-  
+
+.media {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.content {
+  flex: 1;
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.content h2 {
+  color: rgb(255, 255, 255);
+  margin: 0 0 0px; /* Margem do título */
+  font-size: 1.1em; /* Tamanho da fonte do título */
+  text-align: left;
+  padding: 1px
+}
+
