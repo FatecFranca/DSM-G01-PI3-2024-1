@@ -1,8 +1,17 @@
 body{
-
     background-color: #1A212A;
-    margin: 0px;
+    margin-top: 80px;
     padding: 0px;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #fff; /* cor do texto do footer */
+    padding: 10px 0; /* espaçamento interno do footer */
+    text-align: center; /* alinhar o conteúdo no centro */
 }
 
 fieldset {

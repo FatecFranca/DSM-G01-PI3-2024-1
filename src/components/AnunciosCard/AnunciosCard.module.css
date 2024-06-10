@@ -11,18 +11,20 @@
   
   .media {
     width: 100%;
-    border-radius: 50%;
+    height: 300px;
+    border-radius: 20%;
   }
   
   .content {
-    padding: 15px;
+    padding: 1px;
     text-align: center;
   }
   
   .content h3 {
+    padding: 0;
     margin: 0 0 10px;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #c2f800;
   }
   .content h2{
     margin: 0 0 10px;
@@ -32,16 +34,18 @@
   
   .content p {
     margin: 0;
+    padding: 0px;
     color: #ffffff;
   }
   .content1{
-    padding: 15px;
+    padding: 5px;
+    text-align: center;
 
   }
   .content1 h2 {
-    padding: 2px;
+    padding: 5px;
     margin: 0px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #c2f800;
     text-align: center;
   }
