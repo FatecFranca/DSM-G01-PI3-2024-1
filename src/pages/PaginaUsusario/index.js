@@ -6,6 +6,30 @@ import styles from './PaginaUsuario.module.css';
 import HeaderUser from './componentsUser/HeaderUser';
 import InfosUser from './componentsUser/InfoUser';
 import Footer from '../../components/Footer/index';
+import Modal from 'react-modal';
+
+
+
+Modal.setAppElement('#root');
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    transform: 'translate(-50%, -50%)',
+    borderRadius: '15px',
+    background: 'transparent',
+    border: 'none',
+    maxHeight: '80vh',
+    overflowY: 'auto'
+  },
+  overlay: {
+    backgroundColor: 'rgba(0, 0, 0, 0.75)'
+  }
+};
+
 
 const PaginaUsuario = () => {
     const [paginaAtual, setPaginaAtual] = useState('posts'); // Inicialmente, exibir os posts

@@ -66,83 +66,19 @@ const ProjetosPage = () => {
     // Simulação de carregamento de dados
     const mockPosts = [
         {
-          _id: '1',
-          usuario_id: '123',
-          nome: 'José',
-          data: new Date().toISOString(),
-          descricao: 'Descrição do Post 1',
-          midia: 'https://via.placeholder.com/150',
-          municipio: 'São Paulo',
-          uf: 'SP',
-          procura: 'Investidores',
-          objetivo: 'Desenvolver uma nova tecnologia',
-          contato: 'jose@example.com'
-        },
-        {
-          _id: '2',
-          nome: 'Maria',
-          usuario_id: '456',
-          data: new Date().toISOString(),
-          descricao: 'Descrição do Post 2',
-          midia: 'https://via.placeholder.com/150',
-          municipio: 'Rio de Janeiro',
-          uf: 'RJ',
-          procura: 'Parceiros',
-          objetivo: 'Expandir o negócio',
-          contato: 'maria@example.com'
-        },
-        {
-          _id: '3',
-          usuario_id: '789',
-          nome: 'Pedro',
-          data: new Date().toISOString(),
-          descricao: 'Descrição do Post 3',
-          midia: 'https://via.placeholder.com/150',
-          municipio: 'Belo Horizonte',
-          uf: 'MG',
-          procura: 'Clientes',
-          objetivo: 'Vender novos produtos',
-          contato: 'pedro@example.com'
-        },
-        {
-          _id: '4',
-          usuario_id: '101',
-          nome: 'Ana',
-          data: new Date().toISOString(),
-          descricao: 'Descrição do Post 4',
-          midia: 'https://via.placeholder.com/150',
+          _id: '66589e7a5621a584069bcc8c',
+          nome: 'Banda de Reggae',
+          usuario_id: '662c2ce9e363e968531bb19d',
+          data: "2024-08-06T00:00:00.000Z",
+          descricao: 'Banda de reggae em busca de novos membros',
+          midia: 'uploads/reggae_ensaio.jpg',
           municipio: 'Curitiba',
-          uf: 'PR',
-          procura: 'Colaboradores',
-          objetivo: 'Realizar um projeto social',
-          contato: 'ana@example.com'
-        },
-        {
-          _id: '5',
-          usuario_id: '102',
-          nome: 'Carla',
-          data: new Date().toISOString(),
-          descricao: 'Descrição do Post 5',
-          midia: 'https://via.placeholder.com/150',
-          municipio: 'Porto Alegre',
-          uf: 'RS',
-          procura: 'Investidores',
-          objetivo: 'Abrir uma nova filial',
-          contato: 'carla@example.com'
-        },
-        {
-          _id: '6',
-          usuario_id: '103',
-          nome: 'Carlos',
-          data: new Date().toISOString(),
-          descricao: 'Descrição do Post 6',
-          midia: 'https://via.placeholder.com/150',
-          municipio: 'Florianópolis',
-          uf: 'SC',
-          procura: 'Fornecedores',
-          objetivo: 'Ampliar a rede de distribuição',
-          contato: 'carlos@example.com'
-        },
+          uf: 'Paraná',
+          procura: 'teclado',
+          objetivo: 'hobby',
+          contato: 'instagram.com/reggaeroots'
+        }
+        
       ];
       
     setPosts(mockPosts);

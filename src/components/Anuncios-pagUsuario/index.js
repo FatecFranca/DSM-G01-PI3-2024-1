@@ -65,69 +65,15 @@ const AnunciosPage = () => {
       {
         _id: '1',
         usuario_id: '123',
-        nome: 'José',
-        titulo: 'Guitarra',
-        valor: 'R$ 1000,00',
-        cidade: 'São Paulo',
+        nome: 'Carlos Pereira',
+        titulo: 'Guitarra PRS',
+        valor: 'R$ 1500,00',
+        cidade: 'Curitiba',
         data: new Date().toISOString(),
-        descricao: 'Descrição do Post 1',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '2',
-        nome: 'Maria',
-        usuario_id: '456',
-        titulo: 'bateria',
-        cidade: 'Campinas',
-        valor: 'R$ 2000,00',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 2',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '3',
-        usuario_id: '789',
-        titulo: 'saxofone',
-        valor: 'R$ 3000,00',
-        cidade: 'Rio de Janeiro',
-        nome: 'Pedro',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 3',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '4',
-        usuario_id: '101',
-        titulo: 'violão',
-        valor: 'R$ 4000,00',
-        cidae: 'Belo Horizonte',
-        nome: 'Ana',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 4',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '5',
-        usuario_id: '102',
-        titulo: 'bateria',
-        valor: 'R$ 5000,00',
-        nome: 'Carla',
-        cidade: 'Porto Alegre',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 5',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '6',
-        usuario_id: '103',
-        titulo: 'saxofone',
-        valor: 'R$ 6000,00',
-        nome: 'Carlos',
-        cidade: 'Florianópolis',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 6',
-        midia: 'https://via.placeholder.com/150'
-      },
+        descricao: 'Guitarra pouco usada, regulada e com cordas novas.',
+        midia: 'uploads/guitarra_prs.jpg'
+      }
+      
     ];
     setPosts(mockPosts);
   }, []);
@@ -135,7 +81,7 @@ const AnunciosPage = () => {
   return (
     <div className={styles.container}>
     <button className={styles.botao} onClick={openModal}>NOVO ANÚNCIO</button>
-      <h1>Anúncios</h1>
+      <h1>ANÚNCIOS</h1>
       <div className={styles.grid}>
         {posts.map((post) => (
           <AnunciosCard key={post._id} post={post} />

@@ -69,51 +69,11 @@ const PostsPage = () => {
       {
         _id: '1',
         usuario_id: '123',
-        nome: 'José',
+        nome: 'Carlos Pereira Castillo',
         data: new Date().toISOString(),
-        descricao: 'Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1 Descrição do Post 1Descrição do Post 1',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '2',
-        nome: 'Maria',
-        usuario_id: '456',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 2',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '3',
-        usuario_id: '789',
-        nome: 'Pedro',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 3',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '4',
-        usuario_id: '101',
-        nome: 'Ana',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 4',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '5',
-        usuario_id: '102',
-        nome: 'Carla',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 5',
-        midia: 'https://via.placeholder.com/150'
-      },
-      {
-        _id: '6',
-        usuario_id: '103',
-        nome: 'Carlos',
-        data: new Date().toISOString(),
-        descricao: 'Descrição do Post 6',
-        midia: 'https://via.placeholder.com/150'
-      },
+        descricao: 'Terceiro ensaio, aumentando o repertório pouco a pouco, todos mandando muito bem! Em Breve showzinho no ReggaeHouse',
+        midia: 'uploads/reggae_ensaio.jpg'
+      }
     ];
     setPosts(mockPosts);
   }, []);
@@ -122,7 +82,7 @@ const PostsPage = () => {
   return (
     <div>
       <button className={styles.botao} onClick={openModal}>NOVO POST</button>
-      <h1>Posts</h1>
+      <h1>POSTS</h1>
       
       
         {/* Mapear os posts e exibir cada um */}
