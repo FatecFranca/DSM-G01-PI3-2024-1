@@ -3,7 +3,19 @@
     max-width: 1200px;
     margin: 0;
     margin-top: 10px;
+    margin-left: 60px;
   }
+
+  .footer {
+    width: 100%;
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0;
+    left: 0;
+    color: #fff; /* cor do texto do footer */
+    padding: 0px; /* espaçamento interno do footer */
+    text-align: center; /* alinhar o conteúdo no centro */
+}
   
   h1 {
     text-align: center;

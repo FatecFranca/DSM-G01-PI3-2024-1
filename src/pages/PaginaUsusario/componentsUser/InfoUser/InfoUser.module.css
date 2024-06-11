@@ -1,34 +1,72 @@
-body {
-    width: 100vw;
-    right: 100vh;
-  
-}
 .container {
-    
-    display: flex;
-    background-color: #595858;
-    width: 100vw;/* Adicionando a largura como 100% da viewport */
-    height: 300px;/* Adicionando a altura como 100% da viewport */
-    }
-.imagem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 0px;
+    background: url('../../../../assets/Background-Image.png') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Make sure the background covers the entire area */
     width: 100vw;
-    height: 100%;
-    padding: 30px;
-    color:aliceblue;
-
+    min-height: 75vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-right: 25px;
 }
 
-.botaoedt{
-    background-color: #CC353C;
-    text-decoration: none;
-    color:white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    border: none;
-    padding: 0.5rem 1rem;
-    height: 30px;
-    gap: 30px; 
+.background {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    width: 90%;
+    padding: 20px;
+    display: grid;
+    margin-left: 0;
+    grid-template-columns: 20% 1fr; /* 25% for the photo, rest for the info */
+    gap: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(0, 174, 174);
+}
+
+.fotoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowbotao {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botao {
+    background-color: #CC353C; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    border: none; /* Remova a borda */
+    border-radius: 5px; /* Adicione bordas arredondadas */
+    padding: 10px 50px; /* Adicione preenchimento interno */
+    cursor: pointer; /* Altere o cursor ao passar */
+    text-align: center; /* Alinhe o texto ao centro */
+    outline: none; /* Remova o contorno */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    width: 50%;
+}
+
+/* Estilos para o botão hover */
+.botao:hover {
+    background-color: #AF2E33; /* Cor de fundo vermelha mais escura quando hover */
 }

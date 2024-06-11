@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Importe o useNavigate
-import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import styles from './Login.module.css';
 import Header from '../../components/Header';
-import CadastroUsuario from '../CadastroUsuario';
 import Modal from 'react-modal';
+import CadastroUsuario from '../CadastroUsuario'
 
 Modal.setAppElement('#root');
 
@@ -28,9 +27,7 @@ const customStyles = {
 
 function Login() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [loginData, setLoginData] = useState({ email: '', senha: '' });
-  const [errorMessage, setErrorMessage] = useState('');
-  const navigate = useNavigate(); // Use o useNavigate
+  const navigate = useNavigate();
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -40,23 +37,9 @@ function Login() {
     setModalIsOpen(false);
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setLoginData((prevData) => ({ ...prevData, [name]: value }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('/auth/login', loginData);
-      console.log('Login bem-sucedido:', response.data);
-      setErrorMessage('');
-      // Redireciona para a página /users após login bem-sucedido
-      navigate('/users');
-    } catch (error) {
-      console.error('Erro ao fazer login:', error);
-      setErrorMessage('Email ou senha incorretos');
-    }
+  const handleLogin = () => {
+    // Redireciona para a página /users ao clicar em "ENTRAR"
+    navigate('/users');
   };
 
   return (
@@ -65,17 +48,16 @@ function Login() {
       <br />
       <div className={styles.container}>
         <h2 className={styles.titulo}>LOGIN</h2>
-        <form className={styles.formulario} onSubmit={handleSubmit}>
+        <form className={styles.formulario}>
           <div className={styles.campo}>
             <label htmlFor="email">E-MAIL:</label>
-            <input type="email" id="email" name="email" value={loginData.email} onChange={handleChange} required />
+            <input type="email" id="email" name="email" required />
           </div>
           <div className={styles.campo}>
             <label htmlFor="senha">SENHA:</label>
-            <input type="password" id="senha" name="senha" value={loginData.senha} onChange={handleChange} required />
+            <input type="password" id="senha" name="senha" required />
           </div>
-          {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-          <button className={styles.botao} type="submit">ENTRAR</button>
+          <button className={styles.botao} type="button" onClick={handleLogin}>ENTRAR</button>
           <button className={styles.botao} type="button" onClick={openModal}>CADASTRE-SE</button>
         </form>
         <Modal

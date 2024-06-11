@@ -2,18 +2,30 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-left: 50px;
     margin-top: 10px;
   }
+
+  .footer {
+    width: 100%;
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0;
+    left: 0;
+    color: #fff; /* cor do texto do footer */
+    padding: 0px; /* espaçamento interno do footer */
+    text-align: center; /* alinhar o conteúdo no centro */
+}
   
   h1 {
     text-align: center;
     margin-bottom: 10px;
     color: #333;
   }
-  h2{
+  h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #eeff00;
   }
   
   .grid {

@@ -3,6 +3,7 @@ import axios from 'axios';
 import Modal from 'react-modal';
 import CadastroProjeto from '../../pages/CriarProjeto'; // Certifique-se de que o caminho está correto
 import styles from './Projetos-pagUsuario.module.css';
+import ProjetosCard from '../ProjetosCard';
 
 Modal.setAppElement('#root'); // Isso é necessário para acessibilidade
 
@@ -59,24 +60,108 @@ const ProjetosPage = () => {
     setProjetos([...projetos, novoProjeto]);
   };
 
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    // Simulação de carregamento de dados
+    const mockPosts = [
+        {
+          _id: '1',
+          usuario_id: '123',
+          nome: 'José',
+          data: new Date().toISOString(),
+          descricao: 'Descrição do Post 1',
+          midia: 'https://via.placeholder.com/150',
+          municipio: 'São Paulo',
+          uf: 'SP',
+          procura: 'Investidores',
+          objetivo: 'Desenvolver uma nova tecnologia',
+          contato: 'jose@example.com'
+        },
+        {
+          _id: '2',
+          nome: 'Maria',
+          usuario_id: '456',
+          data: new Date().toISOString(),
+          descricao: 'Descrição do Post 2',
+          midia: 'https://via.placeholder.com/150',
+          municipio: 'Rio de Janeiro',
+          uf: 'RJ',
+          procura: 'Parceiros',
+          objetivo: 'Expandir o negócio',
+          contato: 'maria@example.com'
+        },
+        {
+          _id: '3',
+          usuario_id: '789',
+          nome: 'Pedro',
+          data: new Date().toISOString(),
+          descricao: 'Descrição do Post 3',
+          midia: 'https://via.placeholder.com/150',
+          municipio: 'Belo Horizonte',
+          uf: 'MG',
+          procura: 'Clientes',
+          objetivo: 'Vender novos produtos',
+          contato: 'pedro@example.com'
+        },
+        {
+          _id: '4',
+          usuario_id: '101',
+          nome: 'Ana',
+          data: new Date().toISOString(),
+          descricao: 'Descrição do Post 4',
+          midia: 'https://via.placeholder.com/150',
+          municipio: 'Curitiba',
+          uf: 'PR',
+          procura: 'Colaboradores',
+          objetivo: 'Realizar um projeto social',
+          contato: 'ana@example.com'
+        },
+        {
+          _id: '5',
+          usuario_id: '102',
+          nome: 'Carla',
+          data: new Date().toISOString(),
+          descricao: 'Descrição do Post 5',
+          midia: 'https://via.placeholder.com/150',
+          municipio: 'Porto Alegre',
+          uf: 'RS',
+          procura: 'Investidores',
+          objetivo: 'Abrir uma nova filial',
+          contato: 'carla@example.com'
+        },
+        {
+          _id: '6',
+          usuario_id: '103',
+          nome: 'Carlos',
+          data: new Date().toISOString(),
+          descricao: 'Descrição do Post 6',
+          midia: 'https://via.placeholder.com/150',
+          municipio: 'Florianópolis',
+          uf: 'SC',
+          procura: 'Fornecedores',
+          objetivo: 'Ampliar a rede de distribuição',
+          contato: 'carlos@example.com'
+        },
+      ];
+      
+    setPosts(mockPosts);
+  }, []);
+
+
   return (
     <div className={styles.container}>
-      <h1>Projetos</h1>
-      <button className={styles.botao} onClick={openModal}>NOVO PROJETO</button>
+    <button className={styles.botao} onClick={openModal}>NOVO PROJETO</button>
       <div className={styles.projetosList}>
-        {projetos.map((projeto) => (
-          <div key={projeto.id} className={styles.projetoItem}>
-            <h3>{projeto.descricao}</h3>
-            <p>Data: {projeto.data}</p>
-            <p>Objetivo: {projeto.objetivo.join(', ')}</p>
-            <p>Município: {projeto.municipio}</p>
-            <p>UF: {projeto.uf}</p>
-            <p>Estilo: {projeto.estilo.join(', ')}</p>
-            <p>Procura: {projeto.procura.join(', ')}</p>
-            {projeto.link && <p>Link: <a href={projeto.link}>{projeto.link}</a></p>}
-            <hr />
-          </div>
+      <div className={styles.container}>
+      <h1>PROJETOS</h1>
+      <div className={styles.grid}>
+        {posts.map((post) => (
+          <ProjetosCard key={post._id} post={post} />
         ))}
+      </div>
+    </div>
+  );
       </div>
       <Modal
         isOpen={modalIsOpen}
@@ -93,4 +178,4 @@ const ProjetosPage = () => {
   );
 };
 
-export default ProjetosPage;
+export default ProjetosPage;

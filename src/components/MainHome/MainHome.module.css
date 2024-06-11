@@ -8,6 +8,16 @@ body {
     min-height: 100VH;
 }
 
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #fff; /* cor do texto do footer */
+    padding: 10px 0; /* espaçamento interno do footer */
+    text-align: center; /* alinhar o conteúdo no centro */
+}
+
 .banner {
     margin-top: 0px;
     padding: 0px;
@@ -25,7 +35,6 @@ body {
 .texto {
     color: white;
     text-align: center;
-    text-transform: uppercase;
     width: 90%; /* Reduzir a largura do texto para telas menores */
     margin: auto; /* Centralizar o texto na tela */
     padding: 30px;
