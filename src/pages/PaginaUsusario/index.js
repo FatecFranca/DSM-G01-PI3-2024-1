@@ -17,7 +17,7 @@ const PaginaUsuario = () => {
     return (
         <div className={styles.container}>
             
-                <HeaderUser/>
+
                 <InfosUser/>
         
             <div className={styles.botoes}>
