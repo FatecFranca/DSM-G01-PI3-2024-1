@@ -25,13 +25,13 @@ O principal objetivo da **Band Finder** é facilitar a busca por parceiros music
 
 ## PRINTS
 
-![HOME](Design%200/Prints/home.png)
-![LOGIN e CADASTRO](Design%200/Prints/login-cadastro.png)
-![PERFIL](Design%200/Prints/perfil.png)
-![ANUNCIOS](Design%200/Prints/anuncios.png)
-![TIMELINE](Design%200/Prints/timeline.png)
-![USUARIOS](Design%200/prints/usuarios.png)
-![PROJETOS](Design%200/prints/projetos.png)
+![HOME](0%20Design/Prints/home.png)
+![LOGIN e CADASTRO](0%20Design/Prints/login-cadastro.png)
+![PERFIL](0%20Design/Prints/perfil.png)
+![ANUNCIOS](0%20Design/Prints/anuncios.png)
+![TIMELINE](0%20Design/Prints/timeline.png)
+![USUARIOS](0%20Design/prints/usuarios.png)
+![PROJETOS](0%20Design/prints/projetos.png)
 
 
 
