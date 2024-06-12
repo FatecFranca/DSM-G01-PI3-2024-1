@@ -1,32 +1,39 @@
-- Projeto P.I Fatec Franca -
----- 3º SEMESTRE 2024/1 ----
+# BAND FINDER
+http://bandfinder.vercel.app
 
-# Band.Finder
+A **Band Finder** é uma inovadora plataforma web desenvolvida para transformar a forma como músicos se conectam e colaboram.
 
-## Descrição do Projeto
+**Product Owner:** Rafael de Sousa Antoniete  
+**Designer:** Guilherme Dilio de Souza  
+**Desenvolvedor Front-end:** Bruno José dos Santos Silva  
+**Desenvolvedor Back-end:** Allison Rodrigues de Paula e Silva
 
-A **Band.Finder** é uma inovadora plataforma web desenvolvida para transformar a forma como músicos se conectam e colaboram.
+## Introdução
 
-**Product Owner:** Rafael de Sousa Antoniete 
-**Designer:** Guilherme Dilio de Souza
-**Desenvolvedor front-end:** Bruno José dos Santos Silva 
-**Desenvolvedor back-end:** Allison Rodrigues de Paula e Silva
+Na indústria musical, a diversidade de estilos e objetivos pode dificultar a formação de parcerias eficazes. Conexões informais frequentemente levam a frustrações e impedem o avanço de projetos musicais. A **Band Finder** surge para resolver este problema, proporcionando uma solução escalável e acessível que conecta músicos com interesses compatíveis.
 
-Esta iniciativa surge para resolver um problema crítico na indústria musical: a dificuldade de encontrar músicos com objetivos e estilos compatíveis.
+## Objetivo
 
-## Problema a Ser Resolvido
+O principal objetivo da **Band Finder** é facilitar a busca por parceiros musicais. Músicos poderão criar perfis detalhados, especificando seus instrumentos, estilos musicais, objetivos e disponibilidade. Com isso, a plataforma permitirá uma busca mais precisa e eficiente, promovendo colaborações frutíferas e o desenvolvimento de novos talentos.
 
-A música, com sua vasta diversidade, frequentemente enfrenta o desafio de conexões informais e ineficazes entre músicos. Esta lacuna impede o avanço de projetos musicais e a descoberta de novos talentos. A **Band.Finder** vem justamente para preencher essa necessidade, proporcionando uma solução escalável e acessível para músicos de todos os níveis. Através da plataforma, músicos poderão criar perfis detalhados, especificando seus instrumentos, estilos musicais, objetivos e disponibilidade, facilitando uma busca mais precisa e eficiente por parceiros musicais.
+## Funcionalidades
+
+- **Perfis de Músicos:** Criação de perfis detalhados com informações sobre instrumentos, estilos musicais, objetivos e disponibilidade.
+- **Busca de usuários:** Ferramentas de busca para encontrar músicos compatíveis com base em vários critérios.
+- **Anúncios de Projetos:** Área para anúncios de projetos musicais em busca de colaboradores.
+- **Anúncios de Instrumentos/Acessórios:** Área para anúncios de venda de instrumentos musicais.
+
+## PRINTS
+
+![HOME](0%20Design/Prints/home.png)
+![LOGIN e CADASTRO](0%20Design/Prints/login-cadastro.png)
+![PERFIL](0%20Design/Prints/perfil.png)
+![ANUNCIOS](0%20Design/Prints/anuncios.png)
+![TIMELINE](0%20Design/Prints/timeline.png)
+![USUARIOS](0%20Design/Prints/usuarios.png)
+![PROJETOS](0%20Design/Prints/projetos.png)
 
 
-## Solução Proposta
 
-A **Band.Finder** não apenas facilita a criação de conexões entre músicos, mas também apoia produtores musicais e proprietários de casas de shows na busca por talentos. A plataforma é projetada para ser intuitiva e eficiente, com funcionalidades de pesquisa e filtragem avançadas que permitem uma busca detalhada por instrumentos, estilos musicais e localização. Além disso, músicos podem compartilhar amostras de áudio e vídeo de seus trabalhos, aumentando a confiança e a transparência nas conexões estabelecidas.
 
-## Feedback e Benchmark
 
-Com uma pesquisa de opinião realizada entre músicos profissionais e amadores, a **Band.Finder** incorpora sugestões valiosas como filtros por localização e estilo musical, suporte para freelancers e integração com outras plataformas musicais. Inspirada em benchmarks como BandMix, Join My Band e Vampr, a **Band.Finder** oferece uma interface intuitiva e funcionalidades robustas, adaptadas às necessidades específicas da comunidade musical.
-
-## Conclusão
-
-A **Band.Finder** é uma solução revolucionária que promete dinamizar a cena musical local e global, conectando músicos de forma eficiente e promovendo a colaboração e o crescimento artístico. Com a **Band.Finder**, a busca pelo parceiro musical ideal se torna mais rápida e assertiva, permitindo que músicos se concentrem no que realmente importa: criar e compartilhar música.
