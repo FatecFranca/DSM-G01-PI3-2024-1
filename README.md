@@ -1,4 +1,5 @@
 # BAND FINDER
+http://bandfinder.vercel.app
 
 A **Band Finder** é uma inovadora plataforma web desenvolvida para transformar a forma como músicos se conectam e colaboram.
 
@@ -24,11 +25,13 @@ O principal objetivo da **Band Finder** é facilitar a busca por parceiros music
 
 ## PRINTS
 
-![Interface do Band.Finder](Design%200/prints/01.png)
-![Interface do Band.Finder](Design%200/prints/02.png)
-![Interface do Band.Finder](Design%200/prints/03.png)
-![Interface do Band.Finder](Design%200/prints/04.png)
-![Interface do Band.Finder](Design%200/prints/05.png)
+![Interface do Band.Finder](Design%200/prints/home.png)
+![Interface do Band.Finder](Design%200/prints/login-cadastro.png)
+![Interface do Band.Finder](Design%200/prints/perfil.png)
+![Interface do Band.Finder](Design%200/prints/anuncios.png)
+![Interface do Band.Finder](Design%200/prints/posts.png)
+![Interface do Band.Finder](Design%200/prints/usuarios.png)
+![Interface do Band.Finder](Design%200/prints/projetos.png)
 
 
 
