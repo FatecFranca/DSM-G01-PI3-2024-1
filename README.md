@@ -1,13 +1,17 @@
 # BAND FINDER
+
 http://bandfinder.vercel.app
 
 API: https://bandfinder-back.onrender.com
+
 --------------------------------------------------------------------------------------------------------------------------
+
 INICIANDO PROJETO NO LOCALHOST:
 
 root > npm install > npm start
 
 cd back_end > npm install > npm start
+
 --------------------------------------------------------------------------------------------------------------------------
 
 A **Band Finder** é uma inovadora plataforma web desenvolvida para transformar a forma como músicos se conectam e colaboram.
