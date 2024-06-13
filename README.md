@@ -1,9 +1,12 @@
 # BAND FINDER
 http://bandfinder.vercel.app
+
 API: https://bandfinder-back.onrender.com
 --------------------------------------------------------------------------------------------------------------------------
 INICIANDO PROJETO NO LOCALHOST:
+
 root > npm install > npm start
+
 cd back_end > npm install > npm start
 --------------------------------------------------------------------------------------------------------------------------
 
