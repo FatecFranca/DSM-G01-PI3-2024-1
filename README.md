@@ -1,16 +1,25 @@
-# BAND FINDER
+#  BAND FINDER  #
 
 http://bandfinder.vercel.app
 
+----------------------------------------------------------------------------------------
+
+Product Owner: [Rafael de Sousa Antoniete](https://github.com/RafaelAntoniete)  
+Designer: [Guilherme Dilio de Souza](https://github.com/guuisouza)  
+Front-end: [Bruno José dos Santos Silva](https://github.com/BrunoJose-dev)  
+Back-end: Allison [Rodrigues de Paula e Silva](https://github.com/allisonrps)
+
+----------------------------------------------------------------------------------------
+
 # API ROTAS:
 
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/posts
+[API Rota "Posts"](https://bandfinder-backend.vercel.app/posts)
 
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/usuarios
+[API Rota "Projetos"](https://bandfinder-backend.vercel.app/projetos)
 
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/projetos
+[API Rota "Usuários"](https://bandfinder-backend.vercel.app/usuários)
 
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/anuncios
+[API Rota "Anúncios"](https://bandfinder-backend.vercel.app/anuncios)
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -22,12 +31,8 @@ cd back_end > npm install > npm start
 
 --------------------------------------------------------------------------------------------------------------------------
 
-A **Band Finder** é uma inovadora plataforma web desenvolvida para transformar a forma como músicos se conectam e colaboram.
-
-**Product Owner:** Rafael de Sousa Antoniete  
-**Designer:** Guilherme Dilio de Souza  
-**Desenvolvedor Front-end:** Bruno José dos Santos Silva  
-**Desenvolvedor Back-end:** Allison Rodrigues de Paula e Silva
+A **Band Finder** é uma inovadora plataforma web 
+desenvolvida para transformar a forma como músicos se conectam e colaboram.
 
 ## Introdução
 
