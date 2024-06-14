@@ -45,13 +45,7 @@ O principal objetivo da **Band Finder** é facilitar a busca por parceiros music
 
 # API ROTAS:
 
-[POSTS](https://bandfinder-backend.vercel.app/posts)
-
-[PROJETOS](https://bandfinder-backend.vercel.app/projetos)
-
-[USUÁRIOS](https://bandfinder-backend.vercel.app/usuarios)
-
-[ANÚNCIOS](https://bandfinder-backend.vercel.app/anuncios)
+[POSTS](https://bandfinder-backend.vercel.app/posts) * [PROJETOS](https://bandfinder-backend.vercel.app/projetos) * [USUÁRIOS](https://bandfinder-backend.vercel.app/usuarios) * [ANÚNCIOS](https://bandfinder-backend.vercel.app/anuncios)
 
 --------------------------------------------------------------------------------------------------------------------------
 
