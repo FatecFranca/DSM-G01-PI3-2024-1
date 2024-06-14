@@ -2,34 +2,21 @@
 
 http://bandfinder.vercel.app
 
-# API ROTAS:
-
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/posts
-
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/usuarios
-
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/projetos
-
-https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/anuncios
+[NOTION](https://www.notion.so/Band-Finder-17b3bd2259864c54ab467b60ab35f99b0) * [BEHANCE - UX](https://www.notion.so/Band-Finder-17b3bd2259864c54ab467b60ab35f99b)
 
 --------------------------------------------------------------------------------------------------------------------------
 
-# INICIANDO PROJETO NO LOCALHOST:
+3º DSM 2024/1 - FATEC FRANCA - G01
 
-root > npm install > npm start
-
-cd back_end > npm install > npm start
+** Product Owner: Rafael de Sousa Antoniete  
+** Designer: Guilherme Dilio de Souza  
+** Front-end: Bruno José dos Santos Silva  
+** Back-end: Allison Rodrigues de Paula e Silva
 
 --------------------------------------------------------------------------------------------------------------------------
 
-A **Band Finder** é uma inovadora plataforma web desenvolvida para transformar a forma como músicos se conectam e colaboram.
-
-**Product Owner:** Rafael de Sousa Antoniete  
-**Designer:** Guilherme Dilio de Souza  
-**Desenvolvedor Front-end:** Bruno José dos Santos Silva  
-**Desenvolvedor Back-end:** Allison Rodrigues de Paula e Silva
-
-## Introdução
+A **Band Finder** é uma inovadora plataforma web 
+desenvolvida para transformar a forma como músicos se conectam e colaboram.
 
 Na indústria musical, a diversidade de estilos e objetivos pode dificultar a formação de parcerias eficazes. Conexões informais frequentemente levam a frustrações e impedem o avanço de projetos musicais. A **Band Finder** surge para resolver este problema, proporcionando uma solução escalável e acessível que conecta músicos com interesses compatíveis.
 
@@ -53,4 +40,28 @@ O principal objetivo da **Band Finder** é facilitar a busca por parceiros music
 ![TIMELINE](0%20Design/Prints/timeline.png)
 ![USUARIOS](0%20Design/Prints/usuarios.png)
 ![PROJETOS](0%20Design/Prints/projetos.png)
+
+--------------------------------------------------------------------------------------------------------------------------
+
+# API ROTAS:
+
+[POSTS](https://bandfinder-backend.vercel.app/posts)
+
+[PROJETOS](https://bandfinder-backend.vercel.app/projetos)
+
+[USUÁRIOS](https://bandfinder-backend.vercel.app/usuarios)
+
+[ANÚNCIOS](https://bandfinder-backend.vercel.app/anuncios)
+
+--------------------------------------------------------------------------------------------------------------------------
+
+# INICIANDO PROJETO NO LOCALHOST:
+
+git clone https://github.com/FatecFranca/DSM-G01-PI3-2024-1
+
+npm install > npm start
+
+cd back_end > npm install > npm start
+
+--------------------------------------------------------------------------------------------------------------------------
 
