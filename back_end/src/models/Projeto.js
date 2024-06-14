@@ -23,7 +23,7 @@ export default mongoose.model('Projeto', esquema, 'projetos');
 
 import mongoose from 'mongoose';
 
-const schema = new mongoose.Schema({
+const schema = mongoose.Schema({
   titulo: { type: String, required: true },
   usuario_id: { type: mongoose.ObjectId, ref: 'Usuario', required: true },
   descricao: { type: String, required: true },

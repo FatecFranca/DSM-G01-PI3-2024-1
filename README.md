@@ -1,5 +1,26 @@
 # BAND FINDER
+
 http://bandfinder.vercel.app
+
+# API ROTAS:
+
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/posts
+
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/usuarios
+
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/projetos
+
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/anuncios
+
+--------------------------------------------------------------------------------------------------------------------------
+
+# INICIANDO PROJETO NO LOCALHOST:
+
+root > npm install > npm start
+
+cd back_end > npm install > npm start
+
+--------------------------------------------------------------------------------------------------------------------------
 
 A **Band Finder** é uma inovadora plataforma web desenvolvida para transformar a forma como músicos se conectam e colaboram.
 
@@ -32,8 +53,4 @@ O principal objetivo da **Band Finder** é facilitar a busca por parceiros music
 ![TIMELINE](0%20Design/Prints/timeline.png)
 ![USUARIOS](0%20Design/Prints/usuarios.png)
 ![PROJETOS](0%20Design/Prints/projetos.png)
-
-
-
-
 

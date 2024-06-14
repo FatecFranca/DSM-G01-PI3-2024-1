@@ -6,14 +6,14 @@ const AnunciosCard = ({ post }) => {
     <div className={styles.card}>
         <div className={styles.content1}>
             <h2>{post.titulo}</h2>
-            <h2> {post.valor}</h2>
+            <h2> {post.preco}</h2>
         </div>    
 
-      {post.midia && <img src={post.midia} alt="Midia do post" className={styles.media} />}
+      {post.midia && <img src={`/uploads/${post.midia}`} alt="Midia do post" className={styles.media} />}
       <div className={styles.content}>
         <h3>{post.descricao}</h3>
         <h2>{post.nome}</h2> 
-        <h2>{post.cidade}</h2>      
+        <h2>{post.municipio}</h2>      
         <p>{new Date(post.data).toLocaleDateString()}</p>
       </div>
     </div>
