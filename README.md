@@ -2,7 +2,14 @@
 
 http://bandfinder.vercel.app
 
-API: https://bandfinder-back.onrender.com
+API ROTAS:
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/posts
+
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/usuarios
+
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/projetos
+
+https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/anuncios
 
 --------------------------------------------------------------------------------------------------------------------------
 
