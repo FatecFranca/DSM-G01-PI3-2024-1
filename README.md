@@ -2,11 +2,7 @@
 
 http://bandfinder.vercel.app
 
-<<<<<<< HEAD
 # API ROTAS:
-=======
-API ROTAS:
->>>>>>> 0a65f0ca8a409a818414e492ffc8b8bd504edffa
 
 https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/posts
 
