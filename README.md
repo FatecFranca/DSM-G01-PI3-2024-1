@@ -3,6 +3,7 @@
 http://bandfinder.vercel.app
 
 API ROTAS:
+
 https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/posts
 
 https://bandfinder-backend-p669-git-main-allison-rodrigues-projects.vercel.app/usuarios
