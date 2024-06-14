@@ -7,7 +7,7 @@ http://bandfinder.vercel.app
 Product Owner: [Rafael de Sousa Antoniete](https://github.com/RafaelAntoniete)  
 Designer: [Guilherme Dilio de Souza](https://github.com/guuisouza)  
 Front-end: [Bruno José dos Santos Silva](https://github.com/BrunoJose-dev)  
-Back-end: Allison [Rodrigues de Paula e Silva](https://github.com/allisonrps)
+Back-end: [Allison Rodrigues de Paula e Silva](https://github.com/allisonrps)
 
 ----------------------------------------------------------------------------------------
 
