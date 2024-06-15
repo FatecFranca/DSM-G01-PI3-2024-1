@@ -8,10 +8,10 @@ http://bandfinder.vercel.app
 
 3º DSM 2024/1 - FATEC FRANCA - G01
 
-** Product Owner: Rafael de Sousa Antoniete  
-** Designer: Guilherme Dilio de Souza  
-** Front-end: Bruno José dos Santos Silva  
-** Back-end: Allison Rodrigues de Paula e Silva
+Product Owner: [Rafael de Sousa Antoniete](https://github.com/RafaelAntoniete)  
+Designer: [Guilherme Dilio de Souza](https://github.com/guuisouza)  
+Front-end: [Bruno José dos Santos Silva](https://github.com/BrunoJose-dev)  
+Back-end: [Allison Rodrigues de Paula e Silva](https://github.com/allisonrps)
 
 --------------------------------------------------------------------------------------------------------------------------
 
