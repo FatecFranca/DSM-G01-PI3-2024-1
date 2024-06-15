@@ -1,12 +1,15 @@
-# BAND FINDER
+#  BAND FINDER  #
 
 http://bandfinder.vercel.app
+
 
 [NOTION](https://www.notion.so/Band-Finder-17b3bd2259864c54ab467b60ab35f99b0) * [BEHANCE - UX](https://www.notion.so/Band-Finder-17b3bd2259864c54ab467b60ab35f99b)
 
 --------------------------------------------------------------------------------------------------------------------------
 
 3º DSM 2024/1 - FATEC FRANCA - G01
+
+----------------------------------------------------------------------------------------
 
 Product Owner: [Rafael de Sousa Antoniete](https://github.com/RafaelAntoniete)  
 Designer: [Guilherme Dilio de Souza](https://github.com/guuisouza)  
@@ -17,6 +20,9 @@ Back-end: [Allison Rodrigues de Paula e Silva](https://github.com/allisonrps)
 
 A **Band Finder** é uma inovadora plataforma web 
 desenvolvida para transformar a forma como músicos se conectam e colaboram.
+
+## Introdução
+
 
 Na indústria musical, a diversidade de estilos e objetivos pode dificultar a formação de parcerias eficazes. Conexões informais frequentemente levam a frustrações e impedem o avanço de projetos musicais. A **Band Finder** surge para resolver este problema, proporcionando uma solução escalável e acessível que conecta músicos com interesses compatíveis.
 
@@ -30,6 +36,8 @@ O principal objetivo da **Band Finder** é facilitar a busca por parceiros music
 - **Busca de usuários:** Ferramentas de busca para encontrar músicos compatíveis com base em vários critérios.
 - **Anúncios de Projetos:** Área para anúncios de projetos musicais em busca de colaboradores.
 - **Anúncios de Instrumentos/Acessórios:** Área para anúncios de venda de instrumentos musicais.
+
+--------------------------------------------------------------------------------------------------------------------------
 
 ## PRINTS
 
@@ -45,7 +53,9 @@ O principal objetivo da **Band Finder** é facilitar a busca por parceiros music
 
 # API ROTAS:
 
+
 [POSTS](https://bandfinder-backend.vercel.app/posts) * [PROJETOS](https://bandfinder-backend.vercel.app/projetos) * [USUÁRIOS](https://bandfinder-backend.vercel.app/usuarios) * [ANÚNCIOS](https://bandfinder-backend.vercel.app/anuncios)
+
 
 --------------------------------------------------------------------------------------------------------------------------
 
