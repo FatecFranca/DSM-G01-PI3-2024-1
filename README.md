@@ -3,7 +3,7 @@
 http://bandfinder.vercel.app
 
 
-[NOTION](https://www.notion.so/Band-Finder-17b3bd2259864c54ab467b60ab35f99b0) * [BEHANCE - UX](https://www.notion.so/Band-Finder-17b3bd2259864c54ab467b60ab35f99b)
+[NOTION](https://www.notion.so/Band-Finder-17b3bd2259864c54ab467b60ab35f99b0) * [BEHANCE - UX](https://www.behance.net/gallery/200728529/Band-Finder)
 
 --------------------------------------------------------------------------------------------------------------------------
 
